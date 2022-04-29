@@ -1,10 +1,7 @@
 import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import {Typography,Grid } from '@material-ui/core';
-import {Box} from '@mui/material';
+import {Typography,Grid,Box } from '@material-ui/core';
 
 function Footer() {
     return (
@@ -19,7 +16,7 @@ function Footer() {
                             <a href="https://www.instagram.com/generationbrasil/" target="_blank">
                                 <InstagramIcon style={{ fontSize: 60, color: "white" }} />
                             </a>
-                            <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                            <a href="https://github.com/SustechGenT47" target="_blank">
                                 <GitHubIcon style={{ fontSize: 60, color: "white" }} />
                             </a>
                         </Box>
