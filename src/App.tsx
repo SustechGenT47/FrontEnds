@@ -6,6 +6,7 @@ import Home from './paginas/home/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './paginas/login/Login';
 import './App.css';
+import CadastroUsuario from './paginas/cadastrarUsuario/CadastrarUsuario';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="/cadastro" element={<CadastroUsuario />} />
       </Routes>
     </div>
     <Footer />
