@@ -5,7 +5,7 @@ import UserLogin from '../../models/UserLogin';
 
 import './Login.css';
 import useLocalStorage from 'react-use-localstorage';
-import { login } from '../../service/Service';
+import { login } from '../../services/Service';
 
 
 function Login() {
@@ -60,7 +60,7 @@ function Login() {
                 Entrar
             </a>
             <p className="forgot">
-            <Link to = '/cadastrousuario' className = 'text-decorator-none'>
+            <Link to = '/cadastro' className = 'text-decorator-none'>
                <Typography variant = 'subtitle1' gutterBottom align = 'center'>Não tem uma conta? Cadastre-se</Typography>
              </Link>
             </p>

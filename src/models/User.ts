@@ -6,5 +6,4 @@ interface User{
     tipo: string
     foto: string
 }
-
 export default User;
