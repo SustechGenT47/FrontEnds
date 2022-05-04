@@ -1,6 +1,6 @@
 import React, {useState, useEffect, ChangeEvent} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import {Typography, TextField} from '@material-ui/core';
+import {Typography, TextField, Button} from '@material-ui/core';
 import UserLogin from '../../models/UserLogin';
 
 import './Login.css';
@@ -56,9 +56,7 @@ function Login() {
         <TextField value ={userLogin.usuario} onChange = {(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario'  variant = 'outlined' name = 'usuario' margin = 'normal'  className="username"  placeholder="Usuário" fullWidth />
         <TextField  value ={userLogin.senha} onChange = {(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' variant = 'outlined' name = 'senha' margin = 'normal' className="password" type = 'password'  placeholder="Senha"fullWidth />
 
-            <a href="#" className="submit" type='submit'>
-                Entrar
-            </a>
+        <Button type = 'submit' variant = 'contained'className = 'submit'> Logar </Button>
             <p className="forgot">
             <Link to = '/cadastro' className = 'text-decorator-none'>
                <Typography variant = 'subtitle1' gutterBottom align = 'center'>Não tem uma conta? Cadastre-se</Typography>
