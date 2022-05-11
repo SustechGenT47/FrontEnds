@@ -7,9 +7,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './paginas/login/Login';
 import './App.css';
 import CadastroUsuario from './paginas/cadastrarUsuario/CadastrarUsuario';
+import CadastroCategoria from './components/categorias/cadastroCategoria/CadastroCategoria';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import store from './Store/Store';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
+    <Provider store = {store}>
+      <ToastContainer/>
     <Router>
     <Navbar />
     <div style={{ minHeight: '100vh' }}>
@@ -19,10 +27,13 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/cadastro" element={<CadastroUsuario />} />
+        <Route path="/categorias" element={<CadastroCategoria />} />
+        <Route path="/formularioCategoria/:id" element={<CadastroCategoria />} />
       </Routes>
     </div>
     <Footer />
   </Router>
+  </Provider>
   );
 }
 
