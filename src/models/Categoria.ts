@@ -1,7 +1,6 @@
-interface UserLogin{
+interface Categoria{
     id: number
     tipo: string
-    palavraChave: string
+    palavraChave:string
 }
-
-export default UserLogin;
+export default Categoria;

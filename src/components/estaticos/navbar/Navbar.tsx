@@ -62,17 +62,17 @@ function Navbar() {
             </Box>
 
             <Box mx={1} className='cursor' >
-                <Link to="/formularioCategorias" className="text-decorator-none">
+                <Link to="/formularioCategoria" className="text-decorator-none">
                     <Typography variant="h6" className="tituloNavbar">
-                        Categorias
+                    Cadastrar Categoria
                     </Typography>
                 </Link>
             </Box>
 
             <Box mx={1} className='cursor' >
-                <Link to="/categorias" className="text-decorator-none">
+                <Link to="/listaCategorias" className="text-decorator-none">
                     <Typography variant="h6" className="tituloNavbar">
-                        Cadastrar Categorias
+                        Categorias
                     </Typography>
                 </Link>
             </Box>

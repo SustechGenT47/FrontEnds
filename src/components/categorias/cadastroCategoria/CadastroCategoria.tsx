@@ -98,7 +98,7 @@ function CadastroCategoria(){
     }
 
     function back(){
-        navigate('/categorias')
+        navigate('/listaCategorias')
     }
 
     return(
@@ -106,6 +106,7 @@ function CadastroCategoria(){
             <form onSubmit = {onSubmit}>
                 <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Formulário</Typography>
                 <TextField value = {categoria.tipo} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'tipo' label = 'Tipo' variant = 'outlined' name = 'tipo'/>
+                <TextField value = {categoria.palavraChave} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'palavraChave' label = 'PalavraChave' variant = 'outlined' name = 'palavraChave'/>
                 <Button type = 'submit' variant = 'contained' color = 'primary'>
                     Finalizar
                 </Button>
