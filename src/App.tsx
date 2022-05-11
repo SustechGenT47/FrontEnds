@@ -6,7 +6,9 @@ import Home from './paginas/home/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './paginas/login/Login';
 import './App.css';
+
 import CadastroUsuario from './paginas/cadastrarUsuario/CadastrarUsuario';
+import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/cadastro" element={<CadastroUsuario />} />
+        <Route path="/listaCategoria" element={<ListaCategoria />} />
       </Routes>
     </div>
     <Footer />
