@@ -6,6 +6,7 @@ import { cadastroUsuario } from '../../services/Service';
 import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
+import { toast } from "react-toastify";
 
 function CadastroUsuario() {
 
@@ -32,7 +33,7 @@ function CadastroUsuario() {
         })
 
     useEffect(() => {
-        if (userResult.id != 0) {
+        if (userResult.id !== 0) {
             navigate("/login")
         }
     }, [userResult])
@@ -51,21 +52,47 @@ function CadastroUsuario() {
         })
 
     }
-    async function cadastrar(e: ChangeEvent<HTMLFormElement>) {
+    async function cadastrar(e: ChangeEvent<HTMLFormElement>){
         e.preventDefault()
-        if (confirmarSenha === user.senha && user.senha.length >= 8) {
-            try {
-                await cadastroUsuario(`usuarios/cadastrar`, user, setUserResult)
-                alert('Usuario cadastrado com sucesso!')
-            } catch (error) {
+        if(confirmarSenha === user.senha && user.senha.length >= 8){
+            try{
+                await cadastroUsuario(`usuarios/cadastrar`, user, setUserResult)    
+                toast.success('Usuário cadastrado com sucesso!', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: 'colored',
+                    progress: undefined,
+                });
+            }catch(error){
                 console.log(`Error: ${error}`)
 
-                alert('Erro ao cadastrar usuário!')
+                toast.error('Erro ao cadastrar usuário!', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: 'colored',
+                    progress: undefined,
+                });
             }
-        } else {
-            alert('Dados Inconsistentes. Verifique as informações de cadastro.')
-
-            setUser({ ...user, senha: "" })
+        }else{
+            toast.error('Dados inconsistentes. Verifique as informações de cadastro', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
+            setUser({...user, senha: ""})
             setConfirmarSenha("")
         }
     }

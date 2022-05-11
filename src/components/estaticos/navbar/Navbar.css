@@ -1,8 +1,11 @@
 .text-decorator-none{
-    text-decoration: none;
-    color: white
+    text-decoration: none!important;
 }
+.tituloNavbar{
+    margin-right: 5px;
+    color: white!important;
 
+}
 .cursor{
 color:white;
 cursor: pointer;
