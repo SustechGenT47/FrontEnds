@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+    background-image: url("../../assets/logo_sustech.jpeg");
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -14,3 +14,18 @@
 .btnCancelar{
     margin-right: 20px !important;
 }
+
+.textColor{
+    color:  rgb(255, 0, 132)!important;
+}
+
+#dark {
+    background-color: #13111b;
+}
+
+.botaoCadastrar{
+
+    color: #5a4b81;
+    background-color: #5a4b81;
+ 
+  }

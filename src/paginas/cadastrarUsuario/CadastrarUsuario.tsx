@@ -98,12 +98,12 @@ function CadastroUsuario() {
     }
 
         return (
-            <Grid container direction='row' justifyContent='center' alignItems='center'>
+            <Grid id="dark"container direction='row' justifyContent='center' alignItems='center'>
                 <Grid item xs={6} className='imagem2'></Grid>
                 <Grid item xs={6} alignItems='center'>
                     <Box paddingX={10}>
-                        <form onSubmit={cadastrar}>
-                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
+                        <form  onSubmit={cadastrar}>
+                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2 textColor'>Cadastrar</Typography>
                             <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />
                             <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField value={user.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo' label='Tipo' variant='outlined' name='tipo' margin='normal' fullWidth />
@@ -115,7 +115,7 @@ function CadastroUsuario() {
                                         Cancelar
                                     </Button>
                                 </Link>
-                                <Button type='submit' variant='contained' color='primary'>
+                                <Button type='submit' variant='contained' className="botaoCadastrar">
                                     Cadastrar
                                 </Button>
                             </Box>
