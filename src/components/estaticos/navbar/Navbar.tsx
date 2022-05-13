@@ -36,7 +36,7 @@ function Navbar() {
     
     if(token !== ""){
         navBarComponent = 
-        <AppBar position="static" className = 'navBar' >
+        <AppBar position="static" className = 'navBar' style={{"backgroundColor": "#310d57"}} >
         <Toolbar variant="dense" >
             <Box className='cursor' >
                 <Link to="/home" className="text-decorator-none">
