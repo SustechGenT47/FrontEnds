@@ -102,18 +102,24 @@ function CadastroCategoria(){
     }
 
     return(
-        <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "white" }}>
+        <Grid container direction="column" className="flexContainer1" style={{ backgroundColor: "white" }}>
         
-        <Grid alignItems="center" item xs={6}>
+              <Grid alignItems="center" item xs={6} className="formContainer">
             <form onSubmit = {onSubmit}>
+                
                 <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Categoria</Typography>
+                <div>
                 <TextField value = {categoria.tipo} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'tipo' label = 'Tipo' variant = 'outlined' name = 'tipo'/>
+                </div>
+                
+                <div>
                 <TextField value = {categoria.palavraChave} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'palavraChave' label = 'PalavraChave' variant = 'outlined' name = 'palavraChave'/>
+                </div>
                 <Button type = 'submit' variant = 'contained' color = 'primary'>
                     Finalizar
                 </Button>
             </form>
-            </Grid>
+             </Grid>
         </Grid>
     )
 }

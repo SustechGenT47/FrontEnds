@@ -1,0 +1,17 @@
+.flexContainer1{
+    display: flex!important;
+    height: 700px!important;
+    width: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.formContainer{
+    background-color: #7801af!Important;
+    color: rgb(136, 0, 125)!Important;
+    width: center!Important;
+    height: center!Important;
+   
+
+
+}
