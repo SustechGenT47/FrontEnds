@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../Store/tokens/TokensReducer";
 import {toast} from "react-toastify";
 import { addToken } from "../../../Store/tokens/Actions";
+import logo_sustech from "../../../assets/logo_sustech.jpeg";
 
 function Navbar() {
 
@@ -34,12 +35,13 @@ function Navbar() {
     var navBarComponent;
     
     if(token !== ""){
-        navBarComponent = <AppBar position="static">
-        <Toolbar variant="dense">
+        navBarComponent = 
+        <AppBar position="static" className = 'navBar' >
+        <Toolbar variant="dense" >
             <Box className='cursor' >
                 <Link to="/home" className="text-decorator-none">
-                    <Typography variant="h5" className="tituloNavbar">
-                        SUStech
+                    <Typography variant="h5">
+                        <img className = 'img' src={logo_sustech} alt="" />
                     </Typography>
                 </Link>
             </Box>
@@ -77,15 +79,15 @@ function Navbar() {
                 </Link>
             </Box>
 
-            <Box mx={1} className='cursor' >
+            <Box mx={1} className='cursor ' >
                 <Link to="/listaCategorias" className="text-decorator-none">
                     <Typography variant="h6" className="tituloNavbar">
                         Categorias
                     </Typography>
                 </Link>
             </Box>
-            <Box mx={1} className='cursor' onClick={goLogout}>
-                <Typography variant="h6" className="tituloNavbar">
+            <Box mx={1} className='cursor logout' onClick={goLogout}>
+                <Typography variant="h6" className="tituloNavbar" >
                     Logout
                 </Typography>
             </Box>

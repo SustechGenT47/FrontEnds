@@ -1,13 +1,31 @@
+
 .text-decorator-none{
     text-decoration: none!important;
 }
 .tituloNavbar{
-    margin-right: 5px;
-    color: white!important;
+    margin-right: 10px!important;
+    color: rgb(255, 0, 132)!important;
+    font-weight: bold!important;
+    padding: 5px;
 
 }
 .cursor{
-color:white;
 cursor: pointer;
+color: rgb(255, 0, 132)!important;
+/* margin-right: 100px; */
+}
 
+.tituloNavbar:hover{
+    color: rgb(103, 26, 98);
+    
+    
+}
+
+.logout{
+    margin-left: 1450px!important;
+  }
+
+.img{
+    width: 120px!important;
+    height: 75px!important;
 }
