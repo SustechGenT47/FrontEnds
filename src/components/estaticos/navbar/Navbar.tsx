@@ -40,14 +40,15 @@ function Navbar() {
         <AppBar position="static" className = 'navBar' style={{"backgroundColor":"#310d57"}} >
         <Toolbar variant="dense" className="flexContainer" >
 
-
-            <Box className='cursor' >
-                <Link to="/home" className="text-decorator-none">
-                    <Typography variant="h5">
-                        <img className = 'img' src={logo_sustech} alt="" />
-                    </Typography>
-                </Link>
-            </Box>
+            <Grid className = 'containerImagem' item xs={4} >
+                <Box className='cursor'>
+                    <Link to="/home" className="text-decorator-none">
+                        <Typography variant="h5">
+                            <img className = 'img' src={logo_sustech} alt="" />
+                        </Typography>
+                    </Link>
+                </Box>
+            </Grid>
 
             
             <Box mx={1} className='cursor' display="flex" justifyContent="start">
@@ -90,7 +91,7 @@ function Navbar() {
                 </Link>
             </Box>
             
-            <Grid item xs={6} >
+            <Grid item xs={4} >
             <Box mx={1} className='cursor logout' onClick={goLogout}>
                 <Typography variant="h6" className="tituloNavbar" >
                     Logout

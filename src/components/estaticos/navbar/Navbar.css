@@ -30,8 +30,8 @@ color: rgb(255, 0, 132)!important;
   }
 
 .img{
-    width: 120px!important;
-    height: 75px!important;
+    width: 20vh!important;
+    height: 15%!important;
 }
 
 .flexContainer{
@@ -39,4 +39,11 @@ color: rgb(255, 0, 132)!important;
    justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.containerImagem{
+display: flex!important;
+  justify-content: left!important;
+  align-items: left!important;
+  align-content: flex-start!important;
 }
