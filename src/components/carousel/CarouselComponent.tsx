@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from 'react-elastic-carousel';
+import CaroulselElastic from 'react-elastic-carousel';
 import './CarouselComponent.css'
 
 
@@ -12,7 +12,7 @@ function CarouselComponent() {
     ]
 
     return (
-        <Carousel isRTL={false}>
+        <CaroulselElastic isRTL={false}>
             {
                 items.map(item => (
                     <>
@@ -20,7 +20,7 @@ function CarouselComponent() {
                     </>
                 ))
             }
-        </Carousel>
+        </CaroulselElastic>
     )
 }
 
