@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, Box, Typography, Grid } from "@material-ui/core";
 import "./Navbar.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Route, Router, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
 import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../Store/tokens/TokensReducer";
@@ -29,6 +29,11 @@ function Navbar() {
             theme: 'colored',
             progress: undefined,
         });
+        navigate('/home')
+    }
+
+    function goLogin() {
+        dispatch(addToken(''))
         navigate('/login')
     }
 
@@ -50,7 +55,6 @@ function Navbar() {
                 </Box>
             </Grid>
 
-            
             <Box mx={1} className='cursor' display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Typography variant="h6" className="tituloNavbar">
@@ -95,6 +99,30 @@ function Navbar() {
             <Box mx={1} className='cursor logout' onClick={goLogout}>
                 <Typography variant="h6" className="tituloNavbar" >
                     Logout
+                </Typography>
+            </Box>
+            </Grid>
+        </Toolbar>
+    </AppBar>
+    </Grid>
+    }else{
+        navBarComponent = 
+        <Grid container direction="row" justifyContent="center" alignItems="center">
+        <AppBar position="static" className = 'navBar' style={{"backgroundColor":"#310d57"}} >
+        <Toolbar variant="dense" className="flexContainer" >
+            <Grid className = 'containerImagem' item xs={6} >
+                <Box className='cursor'>
+                    <Link to="/home" className="text-decorator-none">
+                        <Typography variant="h5">
+                            <img className = 'img' src={logo_sustech} alt="" />
+                        </Typography>
+                    </Link>
+                </Box>
+            </Grid>
+            <Grid item xs={6} >
+            <Box mx={1} className='cursor logout' onClick={goLogin}>
+                <Typography variant="h6" className="tituloNavbar" >
+                    Login
                 </Typography>
             </Box>
             </Grid>
