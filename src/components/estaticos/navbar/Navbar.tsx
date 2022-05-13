@@ -39,6 +39,8 @@ function Navbar() {
         <Grid container direction="row" justifyContent="center" alignItems="center">
         <AppBar position="static" className = 'navBar' style={{"backgroundColor":"#310d57"}} >
         <Toolbar variant="dense" className="flexContainer" >
+
+
             <Box className='cursor' >
                 <Link to="/home" className="text-decorator-none">
                     <Typography variant="h5">
