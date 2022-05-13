@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Box, Typography } from "@material-ui/core";
+import { AppBar, Toolbar, Box, Typography, Grid } from "@material-ui/core";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
@@ -36,8 +36,9 @@ function Navbar() {
     
     if(token !== ""){
         navBarComponent = 
-        <AppBar position="static" className = 'navBar' >
-        <Toolbar variant="dense" >
+        <Grid container direction="row" justifyContent="center" alignItems="center">
+        <AppBar position="static" className = 'navBar' style={{"backgroundColor":"#310d57"}} >
+        <Toolbar variant="dense" className="flexContainer" >
             <Box className='cursor' >
                 <Link to="/home" className="text-decorator-none">
                     <Typography variant="h5">
@@ -46,7 +47,7 @@ function Navbar() {
                 </Link>
             </Box>
 
-
+            
             <Box mx={1} className='cursor' display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Typography variant="h6" className="tituloNavbar">
@@ -86,13 +87,17 @@ function Navbar() {
                     </Typography>
                 </Link>
             </Box>
+            
+            <Grid item xs={6} >
             <Box mx={1} className='cursor logout' onClick={goLogout}>
                 <Typography variant="h6" className="tituloNavbar" >
                     Logout
                 </Typography>
             </Box>
+            </Grid>
         </Toolbar>
     </AppBar>
+    </Grid>
     }
     return (
         <>

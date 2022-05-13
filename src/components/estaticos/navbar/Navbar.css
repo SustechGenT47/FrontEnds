@@ -22,10 +22,21 @@ color: rgb(255, 0, 132)!important;
 }
 
 .logout{
-    margin-left: 1450px!important;
+  display: flex!important;
+  justify-content: end!important;
+  align-items: end!important;
+  align-content: end!important;
+
   }
 
 .img{
     width: 120px!important;
     height: 75px!important;
+}
+
+.flexContainer{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    align-content: center;
 }

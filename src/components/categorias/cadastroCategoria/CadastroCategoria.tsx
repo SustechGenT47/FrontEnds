@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import {Button, Container, TextField, Typography} from "@material-ui/core"
+import {Button, Container, Grid, TextField, Typography} from "@material-ui/core"
 import './CadastroCategoria.css';
 import { useNavigate, useParams } from "react-router-dom";
 import Categoria from '../../../models/Categoria';
@@ -102,17 +102,19 @@ function CadastroCategoria(){
     }
 
     return(
-        <Container maxWidth='sm' className = 'topo'>
+        <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "white" }}>
+        
+        <Grid alignItems="center" item xs={6}>
             <form onSubmit = {onSubmit}>
-                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Formulário</Typography>
+                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Categoria</Typography>
                 <TextField value = {categoria.tipo} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'tipo' label = 'Tipo' variant = 'outlined' name = 'tipo'/>
                 <TextField value = {categoria.palavraChave} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'palavraChave' label = 'PalavraChave' variant = 'outlined' name = 'palavraChave'/>
                 <Button type = 'submit' variant = 'contained' color = 'primary'>
                     Finalizar
                 </Button>
             </form>
-
-        </Container>
+            </Grid>
+        </Grid>
     )
 }
 
