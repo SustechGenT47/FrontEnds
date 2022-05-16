@@ -11,12 +11,12 @@
 }
 .cursor{
 cursor: pointer;
-color: rgb(255, 0, 132)!important;
+color: #ff0084!important;
 /* margin-right: 100px; */
 }
 
 .tituloNavbar:hover{
-    color: rgb(103, 26, 98);
+    color: #671a62;
     
     
 }
