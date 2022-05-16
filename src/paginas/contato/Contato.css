@@ -4,17 +4,27 @@
     font-weight: bold!important;
     padding-top: 2%!important;
     padding-bottom: 1%!important;
+    font-size: 4vh;
+    
 }
 
+.texto1{
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 3vh!important;
+
+}
 .contato{
     text-align: center!important;
     font-weight: bold;
     color: #e7cd44;
 
 }
-
-.contatoLink{
+.imagemContato{
     align-items: center;
-    font-size: 20px;
-    color: #e7cd44;
 }
+
+
+
+
