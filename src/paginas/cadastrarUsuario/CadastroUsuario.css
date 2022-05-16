@@ -1,10 +1,6 @@
 .imagem2{
-    background-image: url("../../assets/logo_sustech.jpeg");
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+    width: 75%;
+    height: 20%;
 }
 
 .textos2{
@@ -16,12 +12,10 @@
 }
 
 .textColor{
-    color:  rgb(255, 0, 132)!important;
+    color:  #e7cd44!important;
 }
 
-#dark {
-    background-color: #13111b;
-}
+
 
 .botaoCadastrar{
 
@@ -29,3 +23,18 @@
     background-color: #5a4b81;
  
   }
+
+ 
+  .formBackground{
+    background: linear-gradient(36deg,  #ffffff 8%, #671a62 78%)!important;
+    border:solid 4px!important;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .form{
+    
+}
+
