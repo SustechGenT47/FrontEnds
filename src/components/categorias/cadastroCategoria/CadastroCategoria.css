@@ -1,22 +1,22 @@
 .card{
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
-    border:solid 5px!important;
+    border:solid 4px!important;
+
 }
 
 .form{
- margin:  auto!important;
-padding: 1px!important;
-border: none!important;
-margin-bottom: 10px!important;
-border-top-left-radius:19px!important;
-border-top-right-radius:19px!important;
-border-bottom-left-radius:19px!important;
-border-bottom-right-radius:19px!important;
+    width: 215px;
+    margin:  auto;
+    padding: 1px!important;
+    border: none;
+    margin-bottom: 10px;
+    border-top-left-radius:19px!important;
+    border-top-right-radius:19px!important;
+    border-bottom-left-radius:19px!important;
+    border-bottom-right-radius:19px!important;
 }
 
-.form-input{
-    width: 100%;
-}
+
 
 .MuiFormLabel-root{
     color: #FFFFFF;
@@ -32,7 +32,7 @@ border-bottom-right-radius:19px!important;
 .botao{
     font-size:14px!important;
     font-family:Arial!important;
-    width:121px;
+    width:125px;
     height:42px;
     color:#671a62!important;
     border-color:#e7cd44;
@@ -54,5 +54,3 @@ border-bottom-right-radius:19px!important;
     color:#e7cd44!important;
     font-weight:bold!important;
   }
-
-

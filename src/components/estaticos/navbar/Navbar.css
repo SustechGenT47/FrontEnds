@@ -3,7 +3,6 @@
     text-decoration: none!important;
 }
 .tituloNavbar{
-    margin-right: 10px!important;
     color: #e7cd44!important;
     font-weight: bold!important;
     padding: 5px;
@@ -17,8 +16,6 @@ color: #ff0084!important;
 
 .tituloNavbar:hover{
     color: #671a62;
-    
-    
 }
 
 .logout{
@@ -29,9 +26,11 @@ color: #ff0084!important;
 
   }
 
-.img{
+.img2{
     width: 20vh!important;
-    height: 15%!important;
+    height: 10%!important;
+    margin:0 auto;
+
 }
 
 .flexContainer{

@@ -107,19 +107,19 @@ function CadastroCategoria(){
 
         <Box display="flex" justifyContent="center" alignItems="center" height="80vh">
           <Box className="card" width={340} height="50vh" borderRadius={5} 
-                marginTop={12} display="flex" justifyContent="center" alignItems="center">
+                marginTop={15} display="flex" justifyContent="center" alignItems="center">
             <Box>
               <Typography className='text-focus-in title' variant="h4" align="center">
-               Cadastro de categoria
+               Cadastro de Categoria
               </Typography>
 
               <form className='form'>
-                <Box marginY={4}>
+                <Box marginY={4} >
                 <TextField value = {categoria.tipo} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'tipo' label = 'Tipo' variant = 'outlined' name = 'tipo' className="input"/>
                 </Box>
 
                 <Box marginY={4}>
-                <TextField value = {categoria.palavraChave} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'palavraChave' label = 'PalavraChave' variant = 'outlined' name = 'palavraChave' className="input"/>
+                <TextField value = {categoria.palavraChave} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id = 'palavraChave' label = 'Palavra Chave' variant = 'outlined' name = 'palavraChave' className="input"/>
                 </Box>
 
                 <Button type = 'submit' variant = 'contained' className="botao">
