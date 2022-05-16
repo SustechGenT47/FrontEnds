@@ -1,9 +1,17 @@
 .card{
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+    border:solid 5px!important;
 }
 
 .form{
-    width: 270px;
+ margin:  auto!important;
+padding: 1px!important;
+border: none!important;
+margin-bottom: 10px!important;
+border-top-left-radius:19px!important;
+border-top-right-radius:19px!important;
+border-bottom-left-radius:19px!important;
+border-bottom-right-radius:19px!important;
 }
 
 .form-input{
@@ -48,15 +56,3 @@
   }
 
 
-.input{
-
-margin:  auto;
-padding: 1px!important;
-border: none;
-margin-bottom: 10px;
-border-top-left-radius:19px!important;
-border-top-right-radius:19px!important;
-border-bottom-left-radius:19px!important;
-border-bottom-right-radius:19px!important;
-    
-}

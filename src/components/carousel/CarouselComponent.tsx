@@ -1,22 +1,25 @@
 import React from 'react';
 import CaroulselElastic from 'react-elastic-carousel';
 import './CarouselComponent.css'
+import Obsolescencia from '../../assets/Obsolescencia.jpg'
+import logo_sustech from '../../assets/logo_sustech.jpeg'
+
 
 
     
-function CarouselComponent() {
-    var items = [
-        { img: "https://i.blogs.es/79f36c/portada-analisis-trailer-arcane-league-of-legends/1366_2000.jpeg" },
-        { img: "https://cdn1.dotesports.com/wp-content/uploads/sites/3/2021/09/26143317/LUkXhMag.jpeg" }
-        // { img: { arcane } } // 
+function CarouselComponent () {
+    var Items = [
+        { img: "https://i.imgur.com/cPUuPMY.png" },
+        { img: "https://trecobox.com.br/wp-content/uploads/2021/11/Arcane-2.jpg" },
+      
     ]
 
     return (
         <CaroulselElastic isRTL={false}>
             {
-                items.map(item => (
+                Items.map(item => (
                     <>
-                        <img src={item.img} alt="Item" />
+                        <img src= {item.img} alt="item" />
                     </>
                 ))
             }
