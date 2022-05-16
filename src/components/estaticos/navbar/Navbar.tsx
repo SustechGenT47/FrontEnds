@@ -48,8 +48,8 @@ function Navbar() {
             <Grid className = 'containerImagem' item xs={4} >
                 <Box className='cursor'>
                     <Link to="/home" className="text-decorator-none">
-                        <Typography variant="h5">
-                            <img className = 'img' src={logo_sustech} alt="" />
+                        <Typography>
+                            <img className = 'img2' src={logo_sustech} alt="" />
                         </Typography>
                     </Link>
                 </Box>
@@ -94,6 +94,14 @@ function Navbar() {
                     </Typography>
                 </Link>
             </Box>
+
+            <Box mx={1} className='cursor ' >
+                <Link to="/contato" className="text-decorator-none">
+                    <Typography variant="h6" className="tituloNavbar">
+                        Sobre nós   
+                    </Typography>
+                </Link>
+            </Box>
             
             <Grid item xs={4} >
             <Box mx={1} className='cursor logout' onClick={goLogout}>
@@ -114,7 +122,7 @@ function Navbar() {
                 <Box className='cursor'>
                     <Link to="/home" className="text-decorator-none">
                         <Typography variant="h5">
-                            <img className = 'img' src={logo_sustech} alt="" />
+                            <img className = 'img2' src={logo_sustech} alt="" />
                         </Typography>
                     </Link>
                 </Box>

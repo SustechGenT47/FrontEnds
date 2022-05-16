@@ -13,7 +13,7 @@ function Home(){
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "white" }}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" >
              <CarouselComponent />
               
              <Grid xs={6}> 
@@ -21,7 +21,7 @@ function Home(){
                         <Box marginRight={1}>
                             
                         </Box>
-                        <Link to="/listaProdutos" className='text-decorator-none'>
+                        <Link to="/listarProdutos" className='text-decorator-none'>
                         <Button variant="outlined" className='botao'>Ver Produtos</Button>
                         </Link>
                     </Box>
