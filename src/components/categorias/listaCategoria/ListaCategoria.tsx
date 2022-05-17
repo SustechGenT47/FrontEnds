@@ -70,7 +70,7 @@ function ListaCategoria() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5} >
+                <Box display="flex" justifyContent="center" mb={2} >
 
                   <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
                     <Box mx={1}>

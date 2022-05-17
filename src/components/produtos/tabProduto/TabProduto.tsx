@@ -67,22 +67,14 @@ function TabPostagem() {
                 </Box>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5} >
+                <Box className="flexBotao"  mb={1.5} >
     
                   <Link to={`/formularioProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" className="" size='small' color="primary" >
-                        atualizar
+                      <Button variant="contained" size='small' className="botaoComprar" >
+                        Comprar
                       </Button>
                     </Box>
-                  </Link>
-                  <Link to={`/deletarProduto/${produto.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
-                        deletar
-                      </Button>
-                    </Box>
-                    
                   </Link>
                 </Box>
               </CardActions>

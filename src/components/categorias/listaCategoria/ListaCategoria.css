@@ -24,7 +24,6 @@
     border-top-right-radius:19px!important;
     border-bottom-left-radius:19px!important;
     border-bottom-right-radius:19px!important;
-    box-shadow: -1px 12px 16px -7px #e7cd44;
     text-shadow: -1px -1px 20px #e7cd44;
     background:linear-gradient(#b84d8b, #dfc64e);
     margin-top: 2vh!important;
@@ -46,14 +45,22 @@
     border-top-right-radius:19px!important;
     border-bottom-left-radius:19px!important;
     border-bottom-right-radius:19px!important;
-    box-shadow: -1px 12px 16px -7px #b40606;
     text-shadow: -1px -1px 20px #ed0404;
     background:linear-gradient(#e00909, #eda7a7);
     margin-top: 2vh!important;
-    margin-left: 2vw!important;
+    margin-right: 1vw!important;
+    padding-right: 4w!important;
 
   }
   
   .botaoDeletar:hover {
     background: linear-gradient(#ecd669, #c9ba6d);
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-tracks: center;
   }
