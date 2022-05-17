@@ -7,107 +7,52 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-  }
+    background-image:url(file:///C:/Users/Cleverson/Desktop/Sustech/src/paginas/login/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding: 30px 35px;
+    
+    
   
-  #light {
-    background-color: #f3ebf6;
+   
+    
   }
+  .App h3{
+    color: #5a4b81;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 300px;
+    margin-top: 5px;
   
-  #dark {
-    background-color: #13111b;
+    
   }
-   * {
-    text-decoration: none;
-   }
-  body {
-    margin: 0;
-    padding: 0;
-  }
+
+  
   
   body .main  {
     width: 100vw;
     height: 100vh;
-  
-    box-shadow: 0px, 11px 35px 2px rgba(0, 0, 0, 0.14);
+    
 
   
   }
   
-  #light .main {
-    background-color: #fff;
-  }
-  
-  #dark .main {
-    background-color: #201b2d;
-  }
-  
-  .sign {
-    padding-top: 40px;
-    font-size: 23px;
-    font-weight: 700;
-    color: #5a4b81;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
-  
-  #light .sign{
-    color: #5a4b81;
-  }
-  
-  #dark .sign {
-    color: #ffffff;
-  }
-  
-  .username {
-    width: 76%;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 10px 10px;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    text-align: center;
-    margin-bottom: 27px;
-    font-family: "Ubuntu", sans-serif;
-  }
-  
-  .password {
-    width: 76%;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 10px 10px;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    text-align: center;
-    margin-bottom: 27px;
-    font-family: "Ubuntu", sans-serif;
-  }
+
+
   
   
-  form.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  form{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 300px;
+   
+   
+   
   }
   
-  #light .username,
-  #light .password {
-    color: rgb(38, 50, 56);
-    background-color: rgba(136, 126, 126, 0.04);
-  }
+
   
   #dark .username,
   #dark .password {
@@ -131,10 +76,6 @@
     background-color: #5a4b81;
     width: 76%;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
   }
   
   .forgot {
@@ -146,9 +87,8 @@
   }
   
   a {
-    font-weight: 700;
-    color: #5a4b81;
-    text-decoration: none;
+      color: yellow;    
+    
   }
   
   @media screen and (max-width: 600px) {
