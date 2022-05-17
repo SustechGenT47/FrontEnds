@@ -6,8 +6,6 @@
 .background{
   background: linear-gradient(127deg,  #671a62 18%, #9960b6 90%)!important;
 
-  width: 100vw;
-  min-height: calc(100vh - 1px); 
 }
 
 .App-logo {

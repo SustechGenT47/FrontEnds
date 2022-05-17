@@ -25,6 +25,36 @@
     align-items: center;
 }
 
+.imagemCardPessoal{
+    width: 20vh;
+    height: 20vh;
+    margin-top: 0;
+    border-radius: 100%;
+    margin-left: 23%;
 
+}
 
+.card{
+    background-color: black!important;
+}
 
+.devJava{
+    color: #e7cd44;
+    font-size: 3vh!important;
+    text-align: center;
+    font-weight: bold!important;
+}
+
+.nomePessoal{
+    font-size: 3vh!important;
+    font-weight: bold!important;
+}
+
+.linkContato{
+    color: #671a62;
+    font-size: 3vh!important;
+    font-weight: bold!important;
+    text-align: center;
+    text-decoration: none;
+
+}

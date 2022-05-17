@@ -8,15 +8,10 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image:url(file:///C:/Users/Cleverson/Desktop/Sustech/src/paginas/login/logo.svg);
+    background-image:url(https://imgur.com/a/R8b6zew);
     background-repeat: no-repeat;
     background-position: 10px;
     padding: 30px 35px;
-    
-    
-  
-   
-    
   }
   .App h3{
     color: #5a4b81;
@@ -24,35 +19,20 @@
     font-weight: 800;
     margin-left: 300px;
     margin-top: 5px;
-  
-    
-  }
 
-  
+  }
   
   body .main  {
     width: 100vw;
     height: 100vh;
-    
-
-  
   }
-  
 
-
-  
-  
   form{
    display: block;
    margin-left: auto;
    margin-right: auto;
    padding-left: 300px;
-   
-   
-   
   }
-  
-
   
   #dark .username,
   #dark .password {

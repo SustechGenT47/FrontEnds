@@ -41,7 +41,7 @@ function Navbar() {
     
     if(token !== ""){
         navBarComponent = 
-        <Grid container direction="row" justifyContent="center" alignItems="center">
+        <Grid xs = {12} container direction="row" justifyContent="center" alignItems="center">
         <AppBar position="static" className = 'navBar' style={{"backgroundColor":"#310d57"}} >
         <Toolbar variant="dense" className="flexContainer" >
 
@@ -128,11 +128,11 @@ function Navbar() {
                 </Box>
             </Grid>
             <Grid item xs={6} >
-            <Box mx={1} className='cursor logout' onClick={goLogin}>
-                <Typography variant="h6" className="tituloNavbar" >
-                    Login
-                </Typography>
-            </Box>
+                <Box className='cursor logout' onClick={goLogin}>
+                    <Typography variant="h6" className="tituloNavbar" >
+                       Login
+                 </Typography>
+                </Box>
             </Grid>
         </Toolbar>
     </AppBar>
