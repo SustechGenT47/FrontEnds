@@ -30,8 +30,6 @@
     height: 20vh;
     margin-top: 0;
     border-radius: 100%;
-    margin-left: 23%;
-
 }
 
 .card{
@@ -54,7 +52,15 @@
     color: #671a62;
     font-size: 3vh!important;
     font-weight: bold!important;
-    text-align: center;
+    text-align: center!important;
     text-decoration: none;
 
+
+}
+
+.cardSobre{
+    background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+    border:solid 4px!important;
+    width: 40vh;
+    text-align: center;
 }

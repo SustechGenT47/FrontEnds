@@ -108,7 +108,7 @@ function CadastroUsuario() {
                 </Grid>
                 <Grid item xs={5} alignItems='center'className="formBackground" >
                     <Box paddingX={1} >
-                        <form onSubmit={cadastrar}>
+                        <form className = 'formMargin'onSubmit={cadastrar}>
                             <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2 textColor'>Cadastrar</Typography>
                             <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth className="input"/>
                             <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth />

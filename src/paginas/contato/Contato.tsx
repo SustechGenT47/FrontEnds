@@ -44,10 +44,7 @@ function Contato() {
             </Grid>
             <Grid xs={12} container justifyContent="center" alignItems='flex-start' direction="row">
                 <Box mx={3}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={gustavo} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
@@ -66,10 +63,7 @@ function Contato() {
 
 
                 <Box mx={3}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={matheus} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
@@ -86,10 +80,7 @@ function Contato() {
                 </Box>
 
                 <Box mx={3}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={lucas} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
@@ -107,10 +98,7 @@ function Contato() {
                 </Box>
 
                 <Box mx={3}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={cleverson} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
@@ -129,10 +117,7 @@ function Contato() {
             </Grid>
             <Grid xs={12} className='cardPai' container justifyContent="center" alignItems='flex-start' direction="row">
                 <Box mx={3} my={5}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={dany} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
@@ -150,19 +135,16 @@ function Contato() {
                 </Box>
 
                 <Box mx={3} my={5}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={twany} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                                Gustavo de Sousa Santos
+                                Twany Teixeira
                             </Typography>
-                            <a target='_blank' className = 'linkContato' href="https://www.github.com/GuuSantos" > <Typography className = 'linkContato' >GitHub</Typography></a>
-                            <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/gustavossantos41/"><Typography className = 'linkContato'>Linkedin</Typography></a>
+                            <a target='_blank' className = 'linkContato' href="https://github.com/Twany93" > <Typography className = 'linkContato' >GitHub</Typography></a>
+                            <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/twany-teixeira-9a4873116/"><Typography className = 'linkContato'>Linkedin</Typography></a>
 
                         </CardContent>
 
@@ -171,16 +153,13 @@ function Contato() {
                 </Box>
 
                 <Box mx={3} my={5}>
-                    <Card className='card'>
-                        <CardMedia
-                            title="Paella dish"
-                        />
+                    <Card className='cardSobre'>
                         <CardContent>
                             <img className='imagemCardPessoal' src={yasmin} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                                Gustavo de Sousa Santos
+                                Yasmin 
                             </Typography>
                             <a target='_blank' className = 'linkContato' href="https://www.github.com/GuuSantos" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/gustavossantos41/"><Typography className = 'linkContato' >Linkedin</Typography></a>
