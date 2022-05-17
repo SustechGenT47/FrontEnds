@@ -5,7 +5,7 @@
 .tituloNavbar{
     color: #e7cd44!important;
     font-weight: bold!important;
-    padding: 5px;
+    padding: 2px;
 
 }
 .cursor{
@@ -16,6 +16,8 @@ color: #ff0084!important;
 
 .tituloNavbar:hover{
     color: #671a62;
+    
+    
 }
 
 .logout{
@@ -30,7 +32,6 @@ color: #ff0084!important;
     width: 20vh!important;
     height: 10%!important;
     margin:0 auto;
-
 }
 
 .flexContainer{
@@ -38,10 +39,11 @@ color: #ff0084!important;
    justify-content: center;
     align-items: center;
     align-content: center;
+    
 }
 
 .containerImagem{
-display: flex!important;
+  display: flex!important;
   justify-content: left!important;
   align-items: left!important;
   align-content: flex-start!important;
