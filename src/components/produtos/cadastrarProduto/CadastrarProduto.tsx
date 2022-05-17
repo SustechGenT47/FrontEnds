@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { TokenState } from "../../../Store/tokens/TokensReducer";
 import { toast } from "react-toastify";
 
+
 function CadastroProduto(){
 
     let navigate = useNavigate();
@@ -113,7 +114,6 @@ function CadastroProduto(){
                 <TextField value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'quantidade' variant = 'outlined' name = 'quantidade'/>
                 <TextField value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'descricao' variant = 'outlined' name = 'descricao'/>
                 <TextField value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'preco' variant = 'outlined' name = 'preco'/>
-
                 <Button type = 'submit' variant = 'contained' color = 'primary'>
                     Finalizar
                 </Button>

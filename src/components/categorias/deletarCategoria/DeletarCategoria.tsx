@@ -71,8 +71,8 @@ function DeletarCategoria() {
           
   return (
     <>
-      <Box m={2}>
-        <Card variant="outlined">
+      <Box m={2} my={0}>
+        <Card className="deletarCard" variant="outlined">
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
@@ -84,17 +84,19 @@ function DeletarCategoria() {
             </Box>
           </CardContent>
           <CardActions>
+            <Box className='flexButton'>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
-              <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Box mx={2} >
+                <Button onClick={sim} variant="contained" className="botaoSim" size='large' >
                   Sim
                 </Button>
               </Box>
-              <Box mx={2}>
-                <Button  onClick={nao} variant="contained" size='large' color="secondary">
+              <Box mx={2}  >
+                <Button  onClick={nao} variant="contained"  className="botaoNao" >
                   Não
                 </Button>
               </Box>
+            </Box>
             </Box>
           </CardActions>
         </Card>
