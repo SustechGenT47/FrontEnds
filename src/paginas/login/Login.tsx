@@ -78,12 +78,10 @@ function Login() {
  
  
 <h3> SUStech</h3>
-       
-         
 
-        <form className="formulario" onSubmit={logar}>
-            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' variant='outlined' name='usuario'  placeholder="Usuário" fullWidth />
-            <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' variant='outlined' name='senha'  type='password' placeholder="Senha" fullWidth />
+        <form className="form" onSubmit={logar}>
+            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' variant='outlined' name='usuario' margin='normal' className="username" placeholder="Usuário" fullWidth />
+            <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' variant='outlined' name='senha' margin='normal' className="password" type='password' placeholder="Senha" fullWidth />
     
             <Button type='submit' variant='contained' className='submit'> Logar </Button>
             <p className="forgot">

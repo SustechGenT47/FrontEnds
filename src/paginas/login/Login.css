@@ -1,115 +1,157 @@
-
 *{
-    margin: 0;
-    padding: 0;
-  }
-  .App {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction: column;
-    background-image:url(file:///C:/Users/Cleverson/Desktop/Sustech/src/paginas/login/logo.svg);
-    background-repeat: no-repeat;
-    background-position: 10px;
-    background-position-x: left;
-   
-    
-  }
-  .App h3{
-    color: #5a4b81;
-    font-size: 30px;
-    box-shadow: 0px 10px 40px #000;
-    font-weight: 800;
-    box-sizing: border-box;
-    letter-spacing: 8px;
-    margin-left: 300px;
-    margin-top: 25px;
-    border-radius: 8px;
-    
-  }
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  
+#light {
+  background-color: #f3ebf6;
+}
 
-  
-  body .main  {
-    width: 100vw;
-    height: 100vh;
-    
+#dark {
+  background-color: #13111b;
+}
+ * {
+  text-decoration: none;
+ }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  
-  }
-    
-  .formulario{
-flex-direction: column;
-margin: 2px 0;
-margin-left: 400px;
-padding: 12px;
-width: 350px;
-border-radius: 0px;
-border: 4px solid #5a4b81;
-box-shadow: 4px 4px 0px;
-font-family: inherit;
-font-size: 15px;
-margin-bottom: 40px;
-margin-top: 25px;
-background: rgb(23, 4, 31);
-cursor: pointer;
+body .main  {
+  width: 100vw;
+  height: 100vh;
+
+  box-shadow: 0px, 11px 35px 2px rgba(0, 0, 0, 0.14);
 
 
+}
+
+#light .main {
+  background-color: #fff;
+}
+
+#dark .main {
+  background-color: #201b2d;
+}
+
+.sign {
+  padding-top: 40px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #5a4b81;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#light .sign{
+  color: #5a4b81;
+}
+
+#dark .sign {
+  color: #ffffff;
+}
+
+.username {
+  width: 76%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.password {
+  width: 76%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Ubuntu", sans-serif;
+}
 
 
-  }
+form.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  
-  #dark .username,
-  #dark .password {
-    color: rgb(254, 255, 255);
-    background: rgba(255, 247, 247, 0.299);
-  }
-  
-  #dark .username::placeholder,
-  #dark .password::placeholder {
-    color: rgb(254, 255, 255);
-  }
-  
-  input:focus {
-    border: 2px solid rgba(0, 0, 0, 0.18) !important;
-  }
-  
-  .submit {
-    cursor: pointer;
-    border-radius: 5rem;
-    color: #fff;
-    background-color: #5a4b81;
-    width: 76%;
-    height: 40px;
-    display: flex;
-    left: 05px;
+#light .username,
+#light .password {
+  color: rgb(38, 50, 56);
+  background-color: rgba(136, 126, 126, 0.04);
+}
 
-    
-  
+#dark .username,
+#dark .password {
+  color: rgb(254, 255, 255);
+  background: rgba(255, 247, 247, 0.299);
+}
 
-    
-    
+#dark .username::placeholder,
+#dark .password::placeholder {
+  color: rgb(254, 255, 255);
+}
+
+input:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: #5a4b81;
+  width: 76%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.forgot {
+  font-weight: 700;
+  color: #5a4b81;
+  text-decoration: none;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+a {
+  font-weight: 700;
+  color: #5a4b81;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    border-radius: 0px;
   }
-  
-  .forgot {
-    font-weight: 700;
-    color: #5a4b81;
-    text-decoration: none;
-    padding-top: 15px;
-    margin-top: 20px;
-  }
-  
-  a {
-      color: yellow;    
-    
-  }
-  
-  @media screen and (max-width: 600px) {
-    .main {
-      border-radius: 0px;
-    }
-  }
+}

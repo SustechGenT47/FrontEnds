@@ -24,7 +24,8 @@ function App() {
       <ToastContainer/>
     <Router>
     <Navbar />
-    <div style={{ minHeight: '100vh'}} className = 'background'>
+
+    <div className = 'background1'>
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
@@ -41,10 +42,6 @@ function App() {
         <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
         <Route path="/listarProdutos" element={<ListarProdutos />} />
 
-
-
-
-        
       </Routes>
     </div>
     <Footer />

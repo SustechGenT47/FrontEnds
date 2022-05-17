@@ -1,0 +1,11 @@
+.imagemListarProduto{
+    width: 10%;
+    border-radius: 10%;
+}
+
+.cardProdutos{
+    background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}

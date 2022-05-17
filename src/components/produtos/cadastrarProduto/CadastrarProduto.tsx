@@ -105,24 +105,22 @@ function CadastroProduto(){
         navigate('/listarProdutos')
     }
 
+    return(
+        <Container maxWidth='sm' className = 'topo'>
+            <form onSubmit = {onSubmit}>
+                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Formulário</Typography>
+                <TextField value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'nome' variant = 'outlined' name = 'nome'/>
+                <TextField value = {produto.estado} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'estado' label = 'estado' variant = 'outlined' name = 'estado'/>
+                <TextField value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'quantidade' variant = 'outlined' name = 'quantidade'/>
+                <TextField value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'descricao' variant = 'outlined' name = 'descricao'/>
+                <TextField value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'preco' variant = 'outlined' name = 'preco'/>
+                <Button type = 'submit' variant = 'contained' color = 'primary'>
+                    Finalizar
+                </Button>
+            </form>
 
+        </Container>
+    )
+}
 
-        return(
-            <Container maxWidth='sm' className = 'topo'>
-                <form onSubmit = {onSubmit}>
-                    <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Cadastre seu produto</Typography>
-                    <TextField value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'nome' variant = 'outlined' name = 'nome'/>
-                    <TextField value = {produto.estado} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'estado' label = 'estado' variant = 'outlined' name = 'estado'/>
-                    <TextField value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'quantidade' variant = 'outlined' name = 'quantidade'/>
-                    <TextField value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'descricao' variant = 'outlined' name = 'descricao'/>
-                    <TextField value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'preco' variant = 'outlined' name = 'preco'/>
-                    <Button type = 'submit' variant = 'contained' color = 'primary'>
-                        Finalizar
-                    </Button>
-                </form>
-    
-            </Container>
-        )
-    }
-     
 export default CadastroProduto;
