@@ -9,6 +9,7 @@ import { busca } from '../../../services/Service';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../Store/tokens/TokensReducer';
+import produtoImagem from '../../../assets/imagemProduto.gif';
 
 
 function ListaProdutos(){
@@ -50,32 +51,36 @@ function ListaProdutos(){
 
     return (
         <>
-        
+         
         {
           
           produto.map(produto =>(
 
-          <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Produto
+          <Box className = 'imageList'>
+            <Card variant="outlined" className = 'cardProdutos'>
+              <CardContent >
+              <Box  justifyContent = 'center' alignItems='flex-start' className = 'produtoQuebra'>
+              <Typography variant="h5" >
+                <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
                 </Typography>
+              
+              
                 <Typography variant="h5" component="h2">
                  {produto.nome}
                 </Typography>
                 <Typography variant="h5" component="h2">
-                 {produto.estado}
+                 {'Estado em que se encontra: '+produto.estado}
                 </Typography>
                 <Typography variant="h5" component="h2">
-                 {produto.quantidade}
+                 {'Quantidade: '+produto.quantidade}
                 </Typography>
                 <Typography variant="h5" component="h2">
-                 {produto.descricao}
+                 {'Descrição: '+produto.descricao}
                 </Typography>
                 <Typography variant="h5" component="h2">
-                 {produto.preco}
+                 {'R$ '+produto.preco}
                 </Typography>
+                </Box>
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5} >
