@@ -57,27 +57,27 @@ function ListaProdutos(){
           produto.map(produto =>(
 
           <Box className = 'imageList'>
-            <Card variant="outlined" className = 'cardProdutos'>
+            <Card variant="outlined" className = 'cardProdutos' >
               <CardContent >
-              <Box  justifyContent = 'center' alignItems='flex-start' className = 'produtoQuebra'>
+              <Box  justifyContent = 'center' alignItems='flex-start' className = 'produtoQuebra' >
               <Typography variant="h5" >
                 <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
                 </Typography>
-              
-              
-                <Typography variant="h5" component="h2">
+                </Box>
+              <Box className = 'textoProdutos'>
+                <Typography className = 'nomeProduto' variant="h5" component="h2">
                  {produto.nome}
                 </Typography>
-                <Typography variant="h5" component="h2">
-                 {'Estado em que se encontra: '+produto.estado}
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
+                 {'Estado: '+produto.estado}
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
                  {'Quantidade: '+produto.quantidade}
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
                  {'Descrição: '+produto.descricao}
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
                  {'R$ '+produto.preco}
                 </Typography>
                 </Box>
@@ -87,7 +87,7 @@ function ListaProdutos(){
     
                   <Link to={`/formularioProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" className="" size='small' color="primary" >
                         atualizar
                       </Button>
                     </Box>

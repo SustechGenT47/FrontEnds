@@ -1,11 +1,38 @@
 .imagemListarProduto{
-    width: 10%;
+    width: 100%;
+    height: 30vh;
     border-radius: 10%;
+    float: left;
+    margin-bottom: 10%;
+    border:solid 4px!important;
+    box-shadow: 7px 7px #e7cd44;
 }
 
 .cardProdutos{
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 5px;
+    padding-left: 2vh;
+}
+
+.textoProdutos{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1%;
+
+}
+
+.produtoQuebra{
+    display: inline-block;
+}
+
+.nomeProduto{
+    font-weight: bold!important;
+    font-size: 35px!important;
+}
+
+.linhaProduto{
+    font-weight: bold!important;
+    font-size: 25px!important;
 }

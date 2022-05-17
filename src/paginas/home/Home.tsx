@@ -16,20 +16,22 @@ function Home(){
             <Grid container direction="row" justifyContent="center" alignItems="center" >
              <CarouselComponent />
               
-             <Grid xs={6}> 
+             <Grid xs={12}> 
              <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             
                         </Box>
                         <Link to="/listarProdutos" className='text-decorator-none'>
-                        <Button variant="outlined" className='botao'>Ver Produtos</Button>
+                        <Button variant="outlined" className='botaoHome'>Ver Produtos</Button>
                         </Link>
                     </Box>
              </Grid>
               
 
                 <Grid xs={12}>
-                <TabProduto />
+                    <Box display = 'flex'justifyContent='center' alignItems='center'>
+                      <TabProduto />
+                    </Box>
                 </Grid>
             </Grid>
         </>
