@@ -3,10 +3,13 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
-import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
+import { Grid, Box, Typography, Button, TextField, FormControl, RadioGroup, FormControlLabel, Radio, FormLabel } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
 import { toast } from "react-toastify";
+import planeta from '../../assets/planeta.gif';
+
+
 
 function CadastroUsuario() {
 
@@ -52,6 +55,7 @@ function CadastroUsuario() {
         })
 
     }
+
     async function cadastrar(e: ChangeEvent<HTMLFormElement>){
         e.preventDefault()
         if(confirmarSenha === user.senha && user.senha.length >= 8){
@@ -98,15 +102,25 @@ function CadastroUsuario() {
     }
 
         return (
-            <Grid id="dark"container direction='row' justifyContent='center' alignItems='center'>
-                <Grid item xs={6} className='imagem2'></Grid>
-                <Grid item xs={6} alignItems='center'>
-                    <Box paddingX={10}>
-                        <form  onSubmit={cadastrar}>
+            <Grid xs={12}container direction='row' justifyContent='center' alignItems='center'>
+                <Grid item xs={6} >
+                    <img src={planeta} className='imagem2' />
+                </Grid>
+                <Grid item xs={5} alignItems='center'className="formBackground" >
+                    <Box paddingX={1} >
+                        <form onSubmit={cadastrar}>
                             <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2 textColor'>Cadastrar</Typography>
-                            <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />
+                            <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth className="input"/>
                             <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
-                            <TextField value={user.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo' label='Tipo' variant='outlined' name='tipo' margin='normal' fullWidth />
+
+                            <FormControl>
+                            <FormLabel> Tipo de usuario </FormLabel>
+                            <RadioGroup  value={user.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo' name='tipo'>
+                                <FormControlLabel  value="Fisico" control={<Radio />} label="Fisico" />
+                                <FormControlLabel value="Juridico"  control={<Radio />} label="Juridico" />
+                                <FormControlLabel value="Ong"  control={<Radio />} label="Ong" />
+                            </RadioGroup>
+                            </FormControl>
                             <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                             <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
                             <Box marginTop={2} textAlign='center'>
