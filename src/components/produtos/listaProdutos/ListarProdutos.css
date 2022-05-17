@@ -36,3 +36,50 @@
     font-weight: bold!important;
     font-size: 25px!important;
 }
+
+.botaoAtt{
+    font-size:14px!important;
+    font-family:Arial!important;
+    width:7vw;
+    height:5vh;
+    color:#671a62!important;
+    border-color:#e7cd44;
+    font-weight:bold!important;
+    border-top-left-radius:19px!important;
+    border-top-right-radius:19px!important;
+    border-bottom-left-radius:19px!important;
+    border-bottom-right-radius:19px!important;
+    text-shadow: -1px -1px 20px #e7cd44;
+    background:linear-gradient(#b84d8b, #dfc64e);
+    margin-top: 2vh!important;
+  }
+  
+  .botaoAtualizar:hover {
+    background: linear-gradient(#ecd669, #c9ba6d);
+  }
+
+
+
+  .botaoDel{
+    font-size:14px!important;
+    font-family:Arial!important;
+    width:7vw;
+    height:5vh;
+    color:#342d2d!important;
+    border-color:#e7cd44;
+    font-weight:bold!important;
+    border-top-left-radius:19px!important;
+    border-top-right-radius:19px!important;
+    border-bottom-left-radius:19px!important;
+    border-bottom-right-radius:19px!important;
+    text-shadow: -1px -1px 20px #ed0404;
+    background:linear-gradient(#e00909, #eda7a7);
+    margin-top: 2vh!important;
+    margin-right: 1vw!important;
+    padding-right: 4w!important;
+
+  }
+  
+  .botaoDel:hover {
+    background: linear-gradient(#ecd669, #c9ba6d);
+  }

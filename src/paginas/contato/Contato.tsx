@@ -63,8 +63,8 @@ function Contato() {
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
                             Matheus Rodrigues
                             </Typography>
-                            <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/matheus-rodriguess/" > <Typography className = 'linkContato' >GitHub</Typography></a>
-                            <a target='_blank' className = 'linkContato' href="https://github.com/MatheusRGPereira"><Typography className = 'linkContato' >Linkedin</Typography></a>
+                            <a target='_blank' className = 'cardSobre' href="https://www.linkedin.com/in/matheus-rodriguess/" > <Typography className = 'linkContato' >GitHub</Typography></a>
+                            <a target='_blank' className = 'cardSobre' href="https://github.com/MatheusRGPereira"><Typography className = 'linkContato' >Linkedin</Typography></a>
 
                         </CardContent>
 

@@ -72,7 +72,7 @@ function DeletarProduto() {
   return (
     <>
       <Box m={2}>
-        <Card variant="outlined">
+        <Card className='deletarCardProduto' variant="outlined">
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
@@ -93,14 +93,14 @@ function DeletarProduto() {
             </Box>
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+            <Box className='flexBottonProduto' display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                <Button onClick={sim} variant="contained" className="botaoSimProduto" size='large' >
                   Sim
                 </Button>
               </Box>
               <Box mx={2}>
-                <Button  onClick={nao} variant="contained" size='large' color="secondary">
+                <Button  onClick={nao} variant="contained" size='large' className="botaoNaoProduto">
                   Não
                 </Button>
               </Box>

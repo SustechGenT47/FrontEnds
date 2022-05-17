@@ -44,31 +44,32 @@
     font-weight: bold!important;
 }
 
-.linkContato{
-    color: #671a62;
-    font-size: 3vh!important;
-    font-weight: bold!important;
-    text-align: center!important;
-    text-decoration: none;
-
-
-}
-
 .cardSobre{
     
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 40vh;
-    height: 15vw;
+    height: 5%;
+    min-height: 5px;
     text-align: center;
     border-radius: 10%!important;
     box-shadow: 4px 4px #e7cd44!important;
+    font-size: 0vh!important;
+    font-weight: bold!important;
+    text-align: center!important;
+    text-decoration: none;
 }
 
 .cardSobre:hover{
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 40vh;
-    height: 20vw;
+    height: 22vw;
     text-align: center;
     border-radius: 10%!important;
     box-shadow: 8px 8px #e7cd44!important;
+    color: #671a62;
+    font-size: 3vh!important;
+    font-weight: bold!important;
+    text-align: center!important;
+    text-decoration: none;
 }
+

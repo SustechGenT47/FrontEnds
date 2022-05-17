@@ -87,14 +87,14 @@ function ListaProdutos(){
     
                   <Link to={`/formularioProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" className="" size='small' color="primary" >
+                      <Button variant="contained" className="botaoAtt" size='small' >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Button variant="contained" size='small' color="secondary" className="botaoDel">
                         deletar
                       </Button>
                     </Box>
