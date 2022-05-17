@@ -32,10 +32,6 @@
     border-radius: 100%;
 }
 
-.card{
-    background-color: black!important;
-}
-
 .devJava{
     color: #e7cd44;
     font-size: 3vh!important;
@@ -59,8 +55,20 @@
 }
 
 .cardSobre{
+    
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
-    border:solid 4px!important;
     width: 40vh;
+    height: 15vw;
     text-align: center;
+    border-radius: 10%!important;
+    box-shadow: 4px 4px #e7cd44!important;
+}
+
+.cardSobre:hover{
+    background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+    width: 40vh;
+    height: 20vw;
+    text-align: center;
+    border-radius: 10%!important;
+    box-shadow: 8px 8px #e7cd44!important;
 }

@@ -33,13 +33,6 @@ function Contato() {
                             Baseando-se na ODS de numero 12 da ONU(Organização das Nações Unidas), nos unimos e pensamos em uma solução para a diminuição da Obsolescência Programada que seria uma integração entre pessoas e ONG's com o intuito de uma comercialização de produtos usados e/ou pracarizados. De forma com que seja possível a re-utilização dos produtos e que todos eles sejam aproveitados de forma 100% correta, seja para utilização pessoal ou até mesmo para desmontes ou casos de estudos em escolas.
                         </Typography>
                     </Box>
-                    <Box display="flex" alignItems="center" flexDirection="column" justifyContent="center">
-                        <Typography variant='h4' className='titulo'>Entre em contato:</Typography>
-
-                        <Typography className='contato' variant='h5' style={{ "marginBottom": "10px" }}>E-mail: sustech03@gmail.com</Typography>
-
-                    </Box>
-
                 </Grid>
             </Grid>
             <Grid xs={12} container justifyContent="center" alignItems='flex-start' direction="row">
@@ -159,7 +152,7 @@ function Contato() {
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                                Yasmin 
+                                Yasmin Dibas
                             </Typography>
                             <a target='_blank' className = 'linkContato' href="https://www.github.com/GuuSantos" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/gustavossantos41/"><Typography className = 'linkContato' >Linkedin</Typography></a>
@@ -169,8 +162,14 @@ function Contato() {
 
                     </Card>
                 </Box>
+            
             </Grid>
+            <Box display="flex" alignItems="center" flexDirection="column" justifyContent="center">
+                        <Typography variant='h4' className='titulo'>Entre em contato:</Typography>
 
+                        <Typography className='contato' variant='h5' style={{ "marginBottom": "10px" }}>E-mail: sustech03@gmail.com</Typography>
+
+                    </Box>
         </>
 
     );

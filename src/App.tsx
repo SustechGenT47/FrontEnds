@@ -42,10 +42,6 @@ function App() {
         <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
         <Route path="/listarProdutos" element={<ListarProdutos />} />
 
-
-
-
-        
       </Routes>
     </div>
     <Footer />
