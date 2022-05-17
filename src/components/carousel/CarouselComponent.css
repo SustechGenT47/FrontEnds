@@ -1,6 +1,8 @@
 img {
-    width: 50%;
-    height: 100%;
+    width: 500vw;
+    height: 88vh;
     object-fit: cover;
-    margin-top: 10vh;
+    margin-top: 7vh;
+    border-radius: 4%!important;
+   
 }

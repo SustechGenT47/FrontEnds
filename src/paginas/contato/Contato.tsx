@@ -50,7 +50,7 @@ function Contato() {
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                                Gustavo de Sousa Santos
+                                Gustavo Santos
                             </Typography>
                             <a target='_blank' className = 'linkContato' href="https://www.github.com/GuuSantos" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/gustavossantos41/"><Typography className = 'linkContato'>Linkedin</Typography></a>
@@ -68,7 +68,7 @@ function Contato() {
                             <img className='imagemCardPessoal' src={matheus} alt="" />
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                            Matheus R. Galdino Pereira
+                            Matheus Rodrigues
                             </Typography>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/matheus-rodriguess/" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://github.com/MatheusRGPereira"><Typography className = 'linkContato' >Linkedin</Typography></a>
@@ -86,7 +86,7 @@ function Contato() {
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                            Lucas Pereira da Silva 
+                            Lucas Silva 
                             </Typography>
                             <a target='_blank' className = 'linkContato' href="https://github.com/Lukaspds91" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/lucas-pereira-b88349187/"><Typography className = 'linkContato' >Linkedin</Typography></a>
@@ -104,7 +104,7 @@ function Contato() {
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                            Cleverson silva mendes
+                            Cleverson Mendes
                             </Typography>
                             <a target='_blank' className = 'linkContato' href="https://github.com/clev-coder" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/cleverson-mendes-91028b189/"><Typography className = 'linkContato' >Linkedin</Typography></a>
@@ -123,7 +123,7 @@ function Contato() {
                             <Typography className = 'devJava'>DEV JAVA JUNIOR</Typography>
 
                             <Typography className = 'nomePessoal' variant="body2" color="textSecondary" component="p">
-                                Danyelle Amarante Cândido
+                                Danyelle Amarante
                             </Typography>
                             <a target='_blank'  className = 'linkContato' href="https://www.github.com/Danyelleac" > <Typography className = 'linkContato' >GitHub</Typography></a>
                             <a target='_blank' className = 'linkContato' href="https://www.linkedin.com/in/Danyelleac/"><Typography className = 'linkContato'>Linkedin</Typography></a>
