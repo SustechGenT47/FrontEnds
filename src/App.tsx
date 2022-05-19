@@ -17,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ListarProdutos from './components/produtos/listaProdutos/ListarProdutos';
 import CadastroProduto from './components/produtos/cadastrarProduto/CadastrarProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
+import Carrinho from './components/carrinho/Carrinho';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/formularioProduto/:id" element={<CadastroProduto />} />
         <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
         <Route path="/listarProdutos" element={<ListarProdutos />} />
+        <Route path="/carrinho/:id" element={<Carrinho />} />
 
       </Routes>
     </div>

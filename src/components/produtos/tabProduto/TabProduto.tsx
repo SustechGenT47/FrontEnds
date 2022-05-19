@@ -69,7 +69,7 @@ function TabPostagem() {
               <CardActions>
                 <Box className="flexBotao"  mb={1.5} >
     
-                  <Link to={`/formularioProduto/${produto.id}`} className="text-decorator-none">
+                  <Link to={`/carrinho/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' className="botaoComprar" >
                         Comprar
