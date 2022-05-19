@@ -1,5 +1,5 @@
 .card{
-    background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+    background: linear-gradient(15deg,  #ffffff 20%, #973290 78%)!important;
     border-radius: 2%;
     box-shadow: 7px 7px #e7cd44;
    display: flex!important;
@@ -10,16 +10,16 @@
 
 }
 
-.form{
-    width: 215px;
-    margin:  auto;
-    padding: 1px!important;
-    border: none;
-    margin-bottom: 10px;
-    border-top-left-radius:19px!important;
-    border-top-right-radius:19px!important;
-    border-bottom-left-radius:19px!important;
-    border-bottom-right-radius:19px!important;
+.form input[type=text]{
+  width: 12em!important;
+  height: 1.5em!important;
+  margin:  auto!important;
+  padding: 1em!important;
+  border: none!important;
+  margin-bottom: 1em;
+  color: #ffffff!important;
+  border-radius: 5px!important;
+    
 }
 
 
@@ -29,17 +29,15 @@
 }
 
 .background{
-    background: linear-gradient(127deg,  #671a62 18%, #00008b 90%)!important;
-
     width: 100vw;
     min-height: calc(100vh - 1px); 
 }
 
 .botao{
-    font-size:14px!important;
+    font-size:1em!important;
     font-family:Arial!important;
-    width:125px;
-    height:42px;
+    width:7em;
+    height:3em;
     color:#671a62!important;
     border-color:#e7cd44;
     font-weight:bold!important;

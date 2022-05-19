@@ -106,7 +106,6 @@ function CadastroCategoria() {
         <Grid container className="background">
             <Grid item xs={12} >
 
-               
                     <Box display="flex" justifyContent="center" alignItems="center" height="80vh">
                         <Box className="card" width={400} height="75vh" borderRadius={5}
                             marginTop={15} display="flex" justifyContent="center" alignItems="center">
@@ -116,11 +115,11 @@ function CadastroCategoria() {
                                 </Typography>
                                 <form onSubmit={onSubmit} className='form'>
                                     <Box marginY={4} >
-                                        <TextField value={categoria.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id='tipo' label='Tipo' variant='outlined' name='tipo' className="input" />
+                                        <TextField value={categoria.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id='tipo' label='Tipo'  name='tipo' className="input" type={"text"} style={{color:"#fffff"}}/>
                                     </Box>
 
                                     <Box marginY={4}>
-                                        <TextField value={categoria.palavraChave} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id='palavraChave' label='Palavra Chave' variant='outlined' name='palavraChave' className="input" />
+                                        <TextField value={categoria.palavraChave} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id='palavraChave' label='Palavra Chave'  name='palavraChave' className="input" />
                                     </Box>
 
                                     <Box className="flex">

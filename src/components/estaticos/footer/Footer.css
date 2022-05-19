@@ -12,5 +12,10 @@
 
 .icones{
     color:  #e7cd44!important;
-    font-size: 60px!important;
+    font-size: 3em!important;
+}
+
+.icones:hover{
+    color:  #eed86c!important;
+    font-size: 4em!important;
 }
