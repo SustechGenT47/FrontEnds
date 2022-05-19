@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import {Button, Container, TextField, Typography} from "@material-ui/core"
+import {Box, Button, Container, TextField, Typography, Grid} from "@material-ui/core"
 import './CadastrarProduto.css';
 import { useNavigate, useParams } from "react-router-dom";
 import Produto from '../../../models/Produto';
@@ -7,6 +7,7 @@ import { buscaId, post, put } from "../../../services/Service";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../Store/tokens/TokensReducer";
 import { toast } from "react-toastify";
+import { AddBox } from "@mui/icons-material";
 
 
 function CadastroProduto(){
@@ -106,20 +107,40 @@ function CadastroProduto(){
     }
 
     return(
-        <Container maxWidth='sm' className = 'topo'>
-            <form onSubmit = {onSubmit}>
-                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center'>Formulário</Typography>
-                <TextField value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'nome' variant = 'outlined' name = 'nome'/>
-                <TextField value = {produto.estado} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'estado' label = 'estado' variant = 'outlined' name = 'estado'/>
-                <TextField value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'quantidade' variant = 'outlined' name = 'quantidade'/>
-                <TextField value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'descricao' variant = 'outlined' name = 'descricao'/>
-                <TextField value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'preco' variant = 'outlined' name = 'preco'/>
-                <Button type = 'submit' variant = 'contained' color = 'primary'>
-                    Finalizar
-                </Button>
-            </form>
+        <Grid container item xs = {12} className = 'topo' justifyContent = 'center'  alignItems="center">
+            <Box my= {6.6}display="flex" justifyContent="center" alignItems="center" >
+            <form onSubmit = {onSubmit}  className='formProduto' >
+                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center' className='titulo'>Cadastre o seu Produto</Typography>
+                <Box >
+                <TextField className="campoProduto" value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'Nome' variant = 'standard' name = 'nome'/>
+                </Box>
+                <Box >
+                <TextField className="campoProduto" value = {produto.estado} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'estado' label = 'Estado atual do produto' variant = 'standard' name = 'estado'/>
 
-        </Container>
+                </Box>
+
+                <Box>
+                <TextField className="campoProduto" value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'Quantidade' variant = 'standard' name = 'quantidade'/>
+
+                </Box>
+
+                <Box >
+                <TextField className="campoProduto" value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'Descrição' variant = 'standard' name = 'descricao'/>
+
+                </Box>
+
+                <Box >
+                <TextField className="campoProduto" value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'Valor' variant = 'standard' name = 'preco'/>
+
+                </Box>
+                <Box my = {2}display = 'flex' justifyContent="center" alignItems="center">
+                <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>
+                    Cadastrar
+                </Button>
+                </Box>
+            </form>
+            </Box>
+        </Grid>
     )
 }
 

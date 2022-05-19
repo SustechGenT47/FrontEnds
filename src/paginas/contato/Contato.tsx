@@ -36,7 +36,7 @@ function Contato() {
                       </Box>
                     </Box>       
                 <Box display="flex" justifyContent="center" alignItems="center" height="80vh">
-                        <Box className="cardSobreNos" width={850} height="75vh" borderRadius={5} 
+                        <Box className="cardSobreNos" width="100%" height="90%" borderRadius={5} 
                           marginTop={0} marginBottom={5} display="flex" justifyContent="center" alignItems="center">
                           <Typography paragraph className='texto1'>
                               Baseando-se na ODS de numero 12 da ONU(Organização das Nações Unidas), nos unimos e pensamos em uma solução
