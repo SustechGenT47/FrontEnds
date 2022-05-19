@@ -13,8 +13,14 @@ function Home(){
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" >
              <CarouselComponent />
-             <Grid xs={6}> 
-             <Box display="flex" justifyContent="center">
+              
+                <Grid xs={12}>
+                    <Box my={-4} display = 'flex'justifyContent='center' alignItems='center'>
+                      <TabProduto />
+                    </Box>
+                </Grid>
+                <Grid xs={6} > 
+             <Box my={2} display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             
                         </Box>
@@ -23,14 +29,8 @@ function Home(){
                         </Link>
                     </Box>
              </Grid>
-              
-
-                <Grid xs={12}>
-                    <Box display = 'flex'justifyContent='center' alignItems='center'>
-                      <TabProduto />
-                    </Box>
-                </Grid>
             </Grid>
+
         </>
     );
 }

@@ -84,7 +84,14 @@ function ListaProdutos(){
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5} >
-    
+                
+                <Link to={`/carrinho/${produto.id}`} className="text-decorator-none">
+                    <Box mx={1}>
+                      <Button variant="contained" size='small' className="botaoComprar" >
+                        Comprar
+                      </Button>
+                    </Box>
+                  </Link>
                   <Link to={`/formularioProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" className="botaoAtt" size='small' >

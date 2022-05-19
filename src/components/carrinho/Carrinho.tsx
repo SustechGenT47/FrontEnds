@@ -97,12 +97,13 @@ function Carrinho() {
                         <img className='imagemListarTabProdutoCart' src={produtoImagem} alt="" />
 
                         <div className='cardProductInfoCart'>
-                            <Typography className="produtoTitle" variant="body1" gutterBottom>
-                                Produto
-                            </Typography>
-
+                        
                             <Typography className="produtoNome" variant="h4" component="h2">
                                 {produto.nome}
+                            </Typography>
+
+                            <Typography className='produtoQtd' variant="h5" component="p">
+                                Descrição: {produto.descricao}
                             </Typography>
 
                             <Typography className="produtoPreco" variant="h5" component="p">

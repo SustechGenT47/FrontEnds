@@ -19,3 +19,12 @@
   .botaoHome:hover {
     background: linear-gradient(#ecd669, #c9ba6d);
   }
+
+  .backgroundHome{
+    margin-top: 1em;
+  background-color:#671a62;
+  padding: 1em;
+  color: #e7cd44;
+  border: #cfb94d;
+
+  }

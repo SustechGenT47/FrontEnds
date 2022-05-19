@@ -56,12 +56,6 @@ function TabPostagem() {
                  {'Estado: '+produto.estado}
                 </Typography>
                 <Typography className = 'linhaProduto' variant="h5" component="h2">
-                 {'Quantidade: '+produto.quantidade}
-                </Typography>
-                <Typography className = 'linhaProduto' variant="h5" component="h2">
-                 {'Descrição: '+produto.descricao}
-                </Typography>
-                <Typography className = 'linhaProduto' variant="h5" component="h2">
                  {'R$ '+produto.preco}
                 </Typography>
                 </Box>
