@@ -1,18 +1,40 @@
-.titulo{
-    color:#e7cd44;
+.tituloSobre{
+    color:#ffd500;
     text-align: center;
     font-weight: bold!important;
     padding-top: 2%!important;
     padding-bottom: 1%!important;
-    font-size: 4vh;
+    font-size: 6vh;
     
+}
+
+.cardSobreNos{
+    width: 150vh;
+    height: 25vw;
+    background: linear-gradient(360deg,  #4a0046 1%, #a31b9a 80%)!important;
+    border-radius: 2%;
+    box-shadow: 7px 7px #e7cd44;
+   display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    align-content: center!important;
+}
+.cardSobreNosTitulo{
+    width: 65vh;
+    background: linear-gradient(360deg,  #4a0046 1%, #973290 10%)!important;
+    border-radius: 2%;
+    box-shadow: 7px 7px #e7cd44;
+   display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    align-content: center!important;
 }
 
 .texto1{
     color: white;
     text-align: center;
     line-height: 5vh;
-    font-size: 3vh!important;
+    font-size: 4vh!important;
 
 }
 .contato{
@@ -40,7 +62,7 @@
 }
 
 .nomePessoal{
-    font-size: 3vh!important;
+    font-size: 4vh!important;
     font-weight: bold!important;
 }
 
@@ -48,21 +70,26 @@
     
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 40vh;
-    height: 5%;
+    height: 15.5vw;
     min-height: 5px;
     text-align: center;
     border-radius: 10%!important;
     box-shadow: 4px 4px #e7cd44!important;
-    font-size: 0vh!important;
+    font-size: 3vh!important;
     font-weight: bold!important;
     text-align: center!important;
     text-decoration: none;
+    transition-property:height!important;
+    transition-timing-function: ease!important;
+    transition-duration: 1s!important;
+
+
 }
 
 .cardSobre:hover{
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 40vh;
-    height: 22vw;
+    height: 21vw;
     text-align: center;
     border-radius: 10%!important;
     box-shadow: 8px 8px #e7cd44!important;
@@ -72,4 +99,35 @@
     text-align: center!important;
     text-decoration: none;
 }
+
+.linkedin{
+    color:  #0008f2!important;
+    font-size: 3em!important;
+    transition-property:font-size!important;
+    transition-timing-function: ease!important;
+    transition-duration: 0.5s!important;
+    
+}
+
+.linkedin:hover{
+    color:  #000592!important;
+    font-size: 4em!important;
+    
+}
+
+.github{
+    color:  #000000!important;
+    font-size: 3em!important;
+    transition-property:font-size!important;
+    transition-timing-function: ease!important;
+    transition-duration: 0.5s!important;
+    
+}
+
+.github:hover{
+    color:  #ffffff!important;
+    font-size: 4em!important;
+    
+}
+
 

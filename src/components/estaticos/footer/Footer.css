@@ -13,9 +13,14 @@
 .icones{
     color:  #e7cd44!important;
     font-size: 3em!important;
+    transition-property:font-size!important;
+    transition-timing-function: ease!important;
+    transition-duration: 0.5s!important;
+    
 }
 
 .icones:hover{
     color:  #eed86c!important;
     font-size: 4em!important;
+    
 }
