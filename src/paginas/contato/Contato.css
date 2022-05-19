@@ -9,7 +9,7 @@
 }
 
 .cardSobreNos{
-    width: 150vh;
+    width: 100%;
     height: 25vw;
     background: linear-gradient(360deg,  #4a0046 1%, #a31b9a 80%)!important;
     border-radius: 2%;
@@ -20,9 +20,9 @@
     align-content: center!important;
 }
 .cardSobreNosTitulo{
-    width: 65vh;
+    width: 100vh;
     background: linear-gradient(360deg,  #4a0046 1%, #973290 10%)!important;
-    border-radius: 2%;
+    border-radius: 0%;
     box-shadow: 7px 7px #e7cd44;
    display: flex!important;
     align-items: center!important;
@@ -70,7 +70,7 @@
     
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 40vh;
-    height: 15.5vw;
+    height: 11em;
     min-height: 5px;
     text-align: center;
     border-radius: 10%!important;
@@ -89,7 +89,7 @@
 .cardSobre:hover{
     background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
     width: 40vh;
-    height: 21vw;
+    height: 15em;
     text-align: center;
     border-radius: 10%!important;
     box-shadow: 8px 8px #e7cd44!important;
