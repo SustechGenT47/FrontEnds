@@ -7,21 +7,21 @@
 }
 
 .cardTabProduto{
-    background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+   background:#f0aef4!important;
     width: 45vh;
     height: 8em;
     align-items: center;
     text-align: center;
     margin-left: 3vh;
     padding-top: 10px;
-    box-shadow: 4px 4px #e7cd44;
+    box-shadow: 0.3em 0.3em #cc84cf;
     transition-property:height!important;
     transition-timing-function: ease!important;
     transition-duration: 1s!important;
 }
 
 .cardTabProduto:hover{
-  background: linear-gradient(36deg,  #ffffff 1%, #671a62 78%)!important;
+  background: linear-gradient(36deg,  #ffffff 1%, #ab61af 78%)!important;
   border:solid 4px!important;
   width: 45vh;
   height: 13em;
@@ -29,7 +29,7 @@
   text-align: center;
   margin-left: 3vh;
   padding-top: 10px;
-  box-shadow: 7px 7px #e7cd44;
+  box-shadow:0.3em 0.3em #e7cd44;
 }
 
 
@@ -40,7 +40,7 @@
     float: left;
     margin-top: 0;
     border:solid 4px!important;
-    box-shadow: 7px 7px #e7cd44;
+    box-shadow: 0.2em 0.2em #cc84cf;
     border-radius: 2%;
    
 }

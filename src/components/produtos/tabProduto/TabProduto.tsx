@@ -60,9 +60,9 @@ function TabPostagem() {
                 </Typography>
                 </Box>
               </CardContent>
-              <CardActions>
-                <Box className="flexBotao"  mb={1.5} >
-    
+              
+              <CardActions className='flexBotao'>
+                <Box   mb={1.5} >
                   <Link to={`/carrinho/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' className="botaoComprar" >
