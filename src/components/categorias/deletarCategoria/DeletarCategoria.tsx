@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Box, Card, CardActions, CardContent, Button, Typography} from '@material-ui/core';
+import {Box, Card, CardActions, CardContent, Button, Typography, Grid} from '@material-ui/core';
 import './DeletarCategoria.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import { buscaId, deleteId } from '../../../services/Service';
@@ -71,21 +71,23 @@ function DeletarCategoria() {
           
   return (
     <>
-      <Box m={2} my={0}>
+    <Grid container>
+      <Grid xs={12}>
+
+      <Box m={2} my={2}>
         <Card className="deletarCard" variant="outlined">
-          <CardContent>
-            <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
+          <CardContent className="cardContent">
+            <Box display="flex" flexDirection="column" justifyContent="center">
+              <Typography className="titleCardDelete" gutterBottom>
                 Deseja deletar a Categoria:
               </Typography>
-              <Typography color="textSecondary">
+              <Typography className="categoriaDelete">
                 {categoria?.tipo}
               </Typography>
             </Box>
           </CardContent>
-          <CardActions>
-            <Box className='flexButton'>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+          <Box className='flexButton'>
+            <Box display="flex" justifyContent="start" ml={0.1} my={8} >
               <Box mx={2} >
                 <Button onClick={sim} variant="contained" className="botaoSim" size='large' >
                   Sim
@@ -98,9 +100,10 @@ function DeletarCategoria() {
               </Box>
             </Box>
             </Box>
-          </CardActions>
         </Card>
       </Box>
+      </Grid>
+    </Grid>
     </>
   );
 }

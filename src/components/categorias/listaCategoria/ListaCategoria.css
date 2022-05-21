@@ -3,20 +3,22 @@
 }
 
 .CategoriaCard{
-    background: linear-gradient(36deg,  #63075a 1%, #e7cd44 78%)!important;
-    width: 40vh;
-    height: 15vw;
+    background: linear-gradient(36deg,  #dfb4db 1%, #fab7e6 78%)!important;
+    width: 15em;
+    height: 12em;
     text-align: center;
     border-radius: 10%!important;
-    box-shadow: 4px 4px #e7cd44!important;
-    padding-bottom: 2vh;
+    box-shadow: 0.4em 0.4em #c365c6;
+    padding-bottom: 1em;
+    margin-top:1em;
+    margin-bottom: 1em;
 }
 
 .botaoAtualizar{
-    font-size:14px!important;
+    font-size:0.9em!important;
     font-family:Arial!important;
-    width:7vw;
-    height:5vh;
+    width:6.5em;
+    height:2em;
     color:#671a62!important;
     border-color:#e7cd44;
     font-weight:bold!important;
@@ -34,10 +36,10 @@
   }
 
   .botaoDeletar{
-    font-size:14px!important;
+    font-size:0.9em!important;
     font-family:Arial!important;
-    width:7vw;
-    height:5vh;
+    width:6.5em;
+    height:2em;
     color:#342d2d!important;
     border-color:#e7cd44;
     font-weight:bold!important;

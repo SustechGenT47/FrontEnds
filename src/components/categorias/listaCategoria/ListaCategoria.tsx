@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import Categoria from '../../../models/Categoria';
 import './ListaCategoria.css';
 import useLocalStorage from 'react-use-localstorage';
@@ -51,18 +51,18 @@ function ListaCategoria() {
 
   return (
     <>
-
       {
-
+        
         categoria.map(categoria => (
-
+          <Grid container >
+            <Grid xs={12}>
           <Box m={2} my={0} >
             <Card className="CategoriaCard" variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Categoria
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" className="categoriaDelete">
                   {categoria.tipo}
                 </Typography>
                 <Typography variant="h5" component="h2">
@@ -70,7 +70,7 @@ function ListaCategoria() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={2} >
+                <Box display="flex" justifyContent="center" mb={0} >
 
                   <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
                     <Box mx={1}>
@@ -91,6 +91,8 @@ function ListaCategoria() {
               </CardActions>
             </Card>
           </Box>
+          </Grid>
+          </Grid>
         ))
       }
     </>
