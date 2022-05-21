@@ -1,0 +1,58 @@
+
+.topo{
+    margin-top: 0em!important;
+    font-size: 2em;
+    background: rgb(201, 140, 207); 
+    margin-top: 1%;  
+    width: 100%!important;
+    height: 100%!important;
+    }
+    
+    .formProduto input{
+        height: 2em!important;
+        margin:  auto!important;
+        padding: 1em!important;
+        border-radius: 5px!important;
+        border: none!important;
+    
+      }
+    
+    .formProduto label{
+        color: white!important;
+        font-size: 0.5em;
+    
+    
+    }
+    
+      .campoProduto{
+          width: 100%;
+          color: #000000!important;
+          font-weight: bold!important;
+    
+      }
+    .titulo{
+        font-weight: bold!important;
+        margin-bottom: 5%!important;
+        margin-top: 3%!important;
+        color: white!important;
+    }
+    
+    .botaoProduto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:18px!important;
+        font-family:Arial!important;
+        width:10em;
+        height:2em;
+        color:#671a62!important;
+        border-color:#e7cd44;
+        font-weight:bold!important;
+        border-top-left-radius:19px!important;
+        border-top-right-radius:19px!important;
+        border-bottom-left-radius:19px!important;
+        border-bottom-right-radius:19px!important;
+        box-shadow: -1px 12px 16px -7px #e7cd44;
+        text-shadow: -1px -1px 20px #e7cd44;
+        background:linear-gradient(#e7cd44, #cfb94d);
+    }

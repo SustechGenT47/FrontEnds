@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
 import {Box, Button, Container, TextField, Typography, Grid, FormControl, InputLabel, Select, MenuItem, FormHelperText} from "@material-ui/core"
-import './CadastrarProduto.css';
+import './AtualizarProduto.css';
 import { useNavigate, useParams } from "react-router-dom";
 import Produto from '../../../models/Produto';
 import { busca, buscaId, post, put } from "../../../services/Service";
@@ -11,7 +11,7 @@ import { AddBox } from "@mui/icons-material";
 import Categoria from "../../../models/Categoria";
 
 
-function CadastroProduto(){
+function AtualizarProduto(){
 
     let navigate = useNavigate();
     const {id} = useParams<{id: string}>();
@@ -144,7 +144,7 @@ function CadastroProduto(){
         <Grid container item xs = {12} className = 'topo' justifyContent = 'center'  alignItems="center">
             <Box my= {0}display="flex" justifyContent="center" alignItems="center" >
             <form onSubmit = {onSubmit}  className='formProduto' >
-                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center' className='titulo'>Cadastre o seu Produto</Typography>
+                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center' className='titulo'>Atualizar Produto</Typography>
                 <Box >
                 <TextField className="campoProduto" value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'Nome' variant = 'standard' name = 'nome'/>
                 </Box>
@@ -190,7 +190,7 @@ function CadastroProduto(){
                 </Box>
                 <Box my = {2}display = 'flex' justifyContent="center" alignItems="center">
                 <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>
-                    Cadastrar
+                    Atualizar
                 </Button>
                 </Box>
             </form>
@@ -199,4 +199,4 @@ function CadastroProduto(){
     )
 }
 
-export default CadastroProduto;
+export default AtualizarProduto;

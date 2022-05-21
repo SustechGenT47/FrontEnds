@@ -1,6 +1,7 @@
 
 .topo{
-font-size: 7vh;
+margin-top: 0em!important;
+font-size: 2em;
 background: rgb(201, 140, 207); 
 margin-top: 1%;  
 width: 100%!important;
@@ -18,7 +19,7 @@ height: 100%!important;
 
 .formProduto label{
     color: white!important;
-    font-size: 30%;
+    font-size: 0.5em;
 
 
 }
