@@ -114,7 +114,7 @@ function CadastroCategoria() {
                                     Cadastro de Categoria
                                 </Typography>
                                 <form onSubmit={onSubmit} className='form'>
-                                    <Box marginY={4} >
+                                    <Box marginY={6} >
                                         <TextField value={categoria.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id='tipo' label='Tipo'  name='tipo' className="input" type={"text"} style={{color:"#fffff"}}/>
                                     </Box>
 

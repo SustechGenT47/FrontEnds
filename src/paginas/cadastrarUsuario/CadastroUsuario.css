@@ -1,27 +1,31 @@
-.imagem2{
-    width: 75%;
-    height: 20%;
+.imagemCadastro{
+    width: 74%;
+    height: 40%;
     border-radius: 2%;
-    box-shadow: 7px 7px #e7cd44;
+    box-shadow: 0.4em 0.4em #cc84cf;
+    margin: 0em;
 }
 
-.textos2{
+.formContainer h3{
     font-weight: bold !important;
+    margin-top:0em!important;
+    color:  #671a62!important;
+
 }
+
 
 .btnCancelar{
-    font-size:14px!important;
+    font-size:1em!important;
     font-family:Arial!important;
-    width:125px;
-    height:42px;
+    width:7em;
+    height:2.5em;
     color:#671a62!important;
     border-color:#cf2392;
     font-weight:bold!important;
-    border-top-left-radius:19px!important;
-    border-top-right-radius:19px!important;
-    border-bottom-left-radius:19px!important;
-    border-bottom-right-radius:19px!important;
-    box-shadow: -1px 12px 16px -7px #ffe667;
+    border-top-left-radius:1em!important;
+    border-top-right-radius:1em!important;
+    border-bottom-left-radius:1em!important;
+    border-bottom-right-radius:1em!important;
     text-shadow: -1px -1px 20px #e7cd44;
     background:linear-gradient(#e7cd44, #cfb94d);
 
@@ -32,52 +36,67 @@
   }
  
 
-.textColor{
-    color:  #e7cd44!important;
-    
-}
-
-
-
 .botaoCadastrar{
-   font-size:14px!important;
+    font-size:1em!important;
     font-family:Arial!important;
-    width:125px;
-    height:42px;
+    width:7em;
+    height:2.5em;
     color:#671a62!important;
     border-color:#e7cd44;
     font-weight:bold!important;
-    border-top-left-radius:19px!important;
-    border-top-right-radius:19px!important;
-    border-bottom-left-radius:19px!important;
-    border-bottom-right-radius:19px!important;
+    border-top-left-radius:1em!important;
+    border-top-right-radius:1em!important;
+    border-bottom-left-radius:1em!important;
+    border-bottom-right-radius:1em!important;
     box-shadow: -1px 12px 16px -7px #e7cd44;
-    text-shadow: -1px -1px 20px #e7cd44;
     background:linear-gradient(#e7cd44, #cfb94d);
     margin-left: 8%!important;
   }
+
   .botaoCadastrar:hover {
     background: linear-gradient(#ecd669, #c9ba6d);
   }
  
   
-
- 
   .formBackground{
-    background: linear-gradient(36deg,  #ffffff 8%, #671a62 78%)!important;
+    width: 100%!important;
+    height: 100% !important;
+    background:#f0aef4;
     display: flex;
     justify-content: start;
-    padding: 10px!important;
-    margin: 25px!important;
-    box-shadow: 5px 5px #e7cd44;
+    padding-top: 0em!important;
+    padding: 0.5em!important;
+    margin:  0em!important;
+    box-shadow: 0.4em 0.4em #cc84cf;
     border-radius:2%;
   }
 
-  .input{
-   font-size: bold!important;
-  }
 
-.formMargin{
-  padding: 0;
+.formContainer{
+  width: 100%!important;
+  height: 100%!important;
+  color: #671a62;
+  font-size: bold!important;
+
+}
+.formContainer label{
+  font-size: 1em;
+  width: 100%!important;
+  height: 100%!important;
+  color: #4e0653;
+  font-size: bold!important;
+
+}
+
+.formContainer input{
+  width: 100%!important;
+  font-size: 1.5em;
+  height: 0.5em!important;
+  margin:  auto!important;
+  padding: 1em!important;
+  border: none!important;
+  margin-bottom: 1em;
+  color: #671a62!important;
+  border-radius: 5px!important;   
 }
 

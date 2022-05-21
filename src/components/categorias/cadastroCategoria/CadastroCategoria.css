@@ -1,7 +1,7 @@
 .card{
-    background: linear-gradient(15deg,  #ffffff 20%, #973290 78%)!important;
+    background:#f0aef4;
     border-radius: 2%;
-    box-shadow: 7px 7px #e7cd44;
+    box-shadow: 0.4em 0.4em #cc84cf;
    display: flex!important;
     align-items: center!important;
     justify-content: center!important;
@@ -10,22 +10,23 @@
 
 }
 
-.form input[type=text]{
-  width: 12em!important;
-  height: 1.5em!important;
-  margin:  auto!important;
-  padding: 1em!important;
+.form input{
+  width: 20em!important;
+  height: 1.9em!important;
+  padding-top: 1em!important;
   border: none!important;
   margin-bottom: 1em;
   color: #ffffff!important;
   border-radius: 5px!important;
-    
 }
 
+.form label{
+  font-size: 1em;
+  width: 100%!important;
+  height: 100%!important;
+  color: #ffffff;
+  font-size: bold!important;
 
-
-.MuiFormLabel-root{
-    color: #FFFFFF;
 }
 
 .background{
@@ -55,7 +56,7 @@
   }
 
   .title{
-    color:#e7cd44!important;
+    color: #ffffff!important;
     font-weight:bold!important;
   }
 

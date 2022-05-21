@@ -48,6 +48,8 @@ function Contato() {
                       </Box>
                     </Box>
                 </Grid>
+
+                <Typography variant='h4' component='h4' className='titleEquipe'>Conheça nossos Devs</Typography>
             </Grid>
 
             
@@ -222,9 +224,9 @@ function Contato() {
 
             </Grid>
             <Box display="flex" alignItems="center" flexDirection="column" justifyContent="center">
-                <Typography variant='h4' className='titulo'>Entre em contato:</Typography>
+                <Typography variant='h4' className='contato'>Entre em contato:</Typography>
 
-                <Typography className='contato' variant='h5' style={{ "marginBottom": "10px" }}>E-mail: sustech03@gmail.com</Typography>
+                <Typography className='contato' variant='h5' style={{ "marginBottom": "2em" }}>E-mail: sustech03@gmail.com</Typography>
 
             </Box>
         </>
