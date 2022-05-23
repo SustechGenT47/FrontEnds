@@ -16,6 +16,7 @@ function CadastroProduto(){
     let navigate = useNavigate();
     const {id} = useParams<{id: string}>();
     const [categorias, setCategorias] = useState<Categoria[]>([])
+
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
     );
@@ -63,13 +64,13 @@ function CadastroProduto(){
         }, [categoria])
     
         useEffect(() => {
-            getCategorias()
+            getCategoria()
             if (id !== undefined) {
                 findByIdProduto(id)
             }
         }, [id])
     
-        async function getCategorias() {
+        async function getCategoria() {
             await busca("/categorias", setCategorias, {
                 headers: {
                     'Authorization': token
@@ -78,7 +79,7 @@ function CadastroProduto(){
         }
 
     async function findByIdProduto(id:String){
-        buscaId(`/produtos/${id}`, setProduto, {
+       await buscaId(`/produtos/${id}`, setProduto, {
             headers: {
                 'Authorization': token
             }
@@ -95,6 +96,7 @@ function CadastroProduto(){
         setProduto({
             ...produto,
             [e.target.name]: e.target.value,
+            categoria: categoria
         })
     }
 
@@ -168,10 +170,10 @@ function CadastroProduto(){
                 </Box>
                 <Box className="flexCategoria" display = 'flex' justifyContent='center' alignItems =  'center'>
                 <FormControl>
-                    <InputLabel style ={{'fontSize': '20px'}} id="demo-simple-select-helper-label">Categoria</InputLabel>
+                    <InputLabel style ={{'fontSize': '20px'}} id="categoria">Categoria</InputLabel>
                     <Select
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
+                        labelId="categoria"
+                        id="categoria"
                         onChange={(e) => buscaId(`/categorias/${e.target.value}`, setCategoria, {
                             headers: {
                                 'Authorization': token
@@ -179,17 +181,17 @@ function CadastroProduto(){
                         })}>
                         {
                             categorias.map(categoria => (
-                                <MenuItem value={categoria.id}>{categoria.tipo}</MenuItem>
+                                <MenuItem  id = 'categoria' value={categoria.id}>{categoria.tipo}</MenuItem>
                             ))
                         }
                     </Select>
                     <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
 
-                    <Box my = {2}display = 'flex' justifyContent="center" alignItems="center">
+                  
                 <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>
                     Cadastrar
                 </Button>
-                    </Box>
+                
                 </FormControl>
 
                 </Box>
