@@ -102,12 +102,12 @@ function CadastroUsuario() {
     }
 
         return (
-            <Grid xs={12}container direction='row' justifyContent='center' alignItems='center'>
+            <Grid className = 'principal'xs={12}container direction='row' justifyContent='center' alignItems='center'>
                 <Grid item xs={6} >
                     <img src={planet} className='imagemCadastro' />
                 </Grid>
                 <Grid item xs={4} alignItems='center'className="formBackground" >
-                    <Box paddingX={1} >
+                    <Box paddingX={1} my = {12}>
                         <form className = 'formContainer'  onSubmit={cadastrar}>
                             <Typography variant='h3' gutterBottom  component='h3' align='center' className='textos2'>Cadastrar</Typography>
                             <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome'  name='nome' margin='normal' fullWidth />
