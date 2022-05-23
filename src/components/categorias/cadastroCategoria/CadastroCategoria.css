@@ -1,12 +1,12 @@
 .card{
     background:#f0aef4;
     border-radius: 2%;
-    box-shadow: 0.4em 0.4em #cc84cf;
+    box-shadow: 0.4em 0.4em #ac76ad;
    display: flex!important;
     align-items: center!important;
     justify-content: center!important;
     align-content: center!important;
-    
+    border: 1px solid white;
 
 }
 
@@ -32,13 +32,14 @@
 .background{
     width: 100vw;
     min-height: calc(100vh - 1px); 
+    background-color:rgb(201, 140, 207);
 }
 
 .botao{
     font-size:1em!important;
     font-family:Arial!important;
-    width:7em;
-    height:3em;
+    width:50%;
+    height:10%;
     color:#671a62!important;
     border-color:#e7cd44;
     font-weight:bold!important;
@@ -49,6 +50,7 @@
     box-shadow: -1px 12px 16px -7px #e7cd44;
     text-shadow: -1px -1px 20px #e7cd44;
     background:linear-gradient(#e7cd44, #cfb94d);
+    margin-top: 4em!important;
   }
   
   .botao:hover {

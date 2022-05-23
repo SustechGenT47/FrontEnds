@@ -29,6 +29,11 @@ height: 100%!important;
       font-weight: bold!important;
 
   }
+
+.campoProduto label{
+    font-size: 20px!important;
+    margin-top: 5px!important;
+}
 .titulo{
     font-weight: bold!important;
     margin-bottom: 5%!important;
@@ -54,4 +59,9 @@ height: 100%!important;
     box-shadow: -1px 12px 16px -7px #e7cd44;
     text-shadow: -1px -1px 20px #e7cd44;
     background:linear-gradient(#e7cd44, #cfb94d);
+}
+
+.flexCategoria{
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
 }

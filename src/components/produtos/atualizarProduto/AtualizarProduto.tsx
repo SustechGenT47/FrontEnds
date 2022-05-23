@@ -36,8 +36,6 @@ function AtualizarProduto(){
         }
     },[token])
 
-
-
     const [produto, setProduto] = useState<Produto>({
         id: 0,
         nome: '',
@@ -48,35 +46,7 @@ function AtualizarProduto(){
         categoria: null
     })
 
-    const [categoria, setCategoria] = useState<Categoria>(
-        {
-            id: 0,
-            tipo: '',
-            palavraChave:""
-        })
-
-        useEffect(() => { 
-            setProduto({
-                ...produto,
-                categoria: categoria
-            })
-        }, [categoria])
-    
-        useEffect(() => {
-            getCategorias()
-            if (id !== undefined) {
-                findByIdProduto(id)
-            }
-        }, [id])
-    
-        async function getCategorias() {
-            await busca("/categorias", setCategorias, {
-                headers: {
-                    'Authorization': token
-                }
-            })
-        }
-
+  
     async function findByIdProduto(id:String){
         buscaId(`/produtos/${id}`, setProduto, {
             headers: {
@@ -168,25 +138,7 @@ function AtualizarProduto(){
                 
                 </Box>
                 <Box className="flex">
-                <FormControl>
-                    <InputLabel id="demo-simple-select-helper-label">Categoria</InputLabel>
-                    <Select
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/categorias/${e.target.value}`, setCategoria, {
-                            headers: {
-                                'Authorization': token
-                            }
-                        })}>
-                        {
-                            categorias.map(categoria => (
-                                <MenuItem value={categoria.id}>{categoria.tipo}</MenuItem>
-                            ))
-                        }
-                    </Select>
-                    <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
-                </FormControl>
-
+               
                 </Box>
                 <Box my = {2}display = 'flex' justifyContent="center" alignItems="center">
                 <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>

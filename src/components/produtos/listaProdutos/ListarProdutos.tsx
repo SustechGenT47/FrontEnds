@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import Produto from '../../../models/Produto';
 import './ListarProdutos.css';
-import useLocalStorage from 'react-use-localstorage';
 import {useNavigate} from 'react-router-dom';
 import { busca } from '../../../services/Service';
 import { toast } from 'react-toastify';
@@ -51,20 +50,19 @@ function ListaProdutos(){
 
     return (
         <>
-         
+         <Box className = 'background'display="flex" justifyContent="center" alignItems="center">
         {
           
           produto.map(produto =>(
-
-          <Box className = 'imageList'>
-            <Card variant="outlined" className = 'cardProdutos' >
+          <Box my = {10} mx={3} >
+            <Card variant="outlined" className = 'cardProdutos'>
               <CardContent >
-              <Box  justifyContent = 'center' alignItems='flex-start' className = 'produtoQuebra' >
-              <Typography variant="h5" >
+
+              <Box display='flex' justifyContent = 'center'    alignItems = 'center' >
                 <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
-                </Typography>
-                </Box>
-              <Box className = 'textoProdutos'>
+              </Box>
+
+              <Box className = 'listaProdutos'>
                 <Typography className = 'nomeProduto' variant="h5" component="h2">
                  {produto.nome}
                 </Typography>
@@ -80,14 +78,14 @@ function ListaProdutos(){
                 <Typography className = 'linhaProduto' variant="h5" component="h2">
                  {'R$ '+produto.preco}
                 </Typography>
-                </Box>
-              </CardContent>
+              </Box>
+              
+              <Box  className = 'botoes'>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5} >
                 
                 <Link to={`/carrinho/${produto.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' className="botaoComprar" >
+                    <Box mx={1} >
+                      <Button variant="contained" size='small' className="botaoComprarListar" >
                         Comprar
                       </Button>
                     </Box>
@@ -107,12 +105,14 @@ function ListaProdutos(){
                     </Box>
                     
                   </Link>
-                </Box>
               </CardActions>
+              </Box>
+              </CardContent>
             </Card>
           </Box>
           ))
           }
+        </Box>
         </>
       );
     
