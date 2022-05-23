@@ -91,7 +91,7 @@ function Login() {
                                     </p>
                                   
                                 </form>
-                            <Box my = {12.3} >
+                            <Box my = {16.6} >
                                 <img src={imagemLogin} className="imagem2"/>
                             </Box>
                             
