@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { AppBar, Tab, Tabs, Typography, Box, Card, CardContent, CardActions, Button } from '@material-ui/core';
-import { TabContext, TabPanel } from '@material-ui/lab';
-import ListarProdutos from '../listaProdutos/ListarProdutos'
+import {Typography, Box, Card, CardContent, CardActions, Button } from '@material-ui/core';
 import './TabProduto.css';
 import produtoImagem from '../../../assets/imagemProduto.gif';
 import { Link } from 'react-router-dom';
@@ -61,8 +59,9 @@ function TabPostagem() {
                 </Box>
               </CardContent>
               
-              <CardActions className='flexBotao'>
-                <Box   mb={1.5} >
+              <Box  className='flexBotao' display = 'flex' justifyContent='center' alignItems = 'center' >
+              <CardActions >
+                <Box   mb={1.5}>
                   <Link to={`/carrinho/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' className="botaoComprar" >
@@ -72,6 +71,7 @@ function TabPostagem() {
                   </Link>
                 </Box>
               </CardActions>
+              </Box>
             </Card>
           </Box>
           ))

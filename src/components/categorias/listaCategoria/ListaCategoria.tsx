@@ -51,50 +51,50 @@ function ListaCategoria() {
 
   return (
     <>
+             <Box className = 'background' display="flex" justifyContent="center" alignItems="center">
+
       {
         
         categoria.map(categoria => (
-          <Grid container >
-            <Grid xs={12}>
-          <Box m={2} my={0} >
-            <Card className="CategoriaCard" variant="outlined">
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+          <Box my = {10} mx={3} alignItems="center" >
+            <Card className="CategoriaCard" variant="outlined"  >
+              <CardContent >
+              <Box className = 'conteudoCategoria' justifyContent="center" alignItems="center" >
+                <Typography className = 'tituloCategoria' variant = 'h5' gutterBottom>
                   Categoria
                 </Typography>
-                <Typography variant="h5" component="h2" className="categoriaDelete">
+                <Typography className = 'linhaCategoria' variant="h5" component="h2" >
                   {categoria.tipo}
                 </Typography>
-                <Typography variant="h5" component="h2">
-                  {categoria.palavraChave}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Box display="flex" justifyContent="center" mb={0} >
 
+                </Box>
+              </CardContent>
+              <Box display="flex" justifyContent="center" style={{'marginTop':'20%'}} >
+              <CardActions>
+              
                   <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" className="botaoAtualizar" size='small' >
+                    <Box mx={5} justifyContent="center" style={{'marginTop':'0'}}>
+                      <Button variant="contained" className="botaoAtt"  >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarCategoria/${categoria.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' className="botaoDeletar">
+                    <Box mx={5} justifyContent="center" style={{'marginTop':'0'}}>
+                      <Button variant="contained"  className="botaoDel">
                         deletar
                       </Button>
                     </Box>
 
                   </Link>
-                </Box>
               </CardActions>
+              </Box>
+
             </Card>
           </Box>
-          </Grid>
-          </Grid>
         ))
       }
+          </Box>
     </>
   );
 

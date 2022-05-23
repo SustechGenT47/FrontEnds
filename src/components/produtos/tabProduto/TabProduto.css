@@ -18,13 +18,14 @@
     transition-property:height!important;
     transition-timing-function: ease!important;
     transition-duration: 1s!important;
+    border: 1px white solid!important;
 }
 
 .cardTabProduto:hover{
   background: linear-gradient(36deg,  #ffffff 1%, #ab61af 78%)!important;
   border:solid 4px!important;
   width: 45vh;
-  height: 13em;
+  height: 13em!important;
   align-items: center;
   text-align: center;
   margin-left: 3vh;
@@ -46,13 +47,7 @@
 }
 
 
-.flexBotao{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    align-tracks: center;
-  }
+
 
   .botaoComprar{
     font-size:14px!important;
@@ -68,7 +63,6 @@
     border-bottom-right-radius:19px!important;
     text-shadow: -1px -1px 20px #e7cd44;
     background:linear-gradient(#b84d8b, #dfc64e);
-    margin-top: 2vh!important;
   }
   
   .botaoComprar:hover {

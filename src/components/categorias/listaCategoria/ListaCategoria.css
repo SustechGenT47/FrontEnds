@@ -1,17 +1,34 @@
-.text-decorator-none{
-    text-decoration: none;
-}
-
 .CategoriaCard{
-    background: linear-gradient(36deg,  #dfb4db 1%, #fab7e6 78%)!important;
-    width: 15em;
-    height: 12em;
+    background: #f0aef4!important;
+    width: 50vh;
+    height: 50vh;
     text-align: center;
+    justify-content: center;
     border-radius: 10%!important;
     box-shadow: 0.4em 0.4em #c365c6;
-    padding-bottom: 1em;
-    margin-top:1em;
-    margin-bottom: 1em;
+    border: 1px solid white!important;
+
+}
+
+.tituloCategoria{
+  font-size: 3vh!important;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.conteudoCategoria{
+  padding-top: 20%;
+  align-items: center;
+  justify-content: center;
+  vertical-align: bottom;
+}
+
+.linhaCategoria{
+  font-weight: bold!important;
+  font-size: 4vh!important;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .botaoAtualizar{
@@ -59,10 +76,3 @@
     background: linear-gradient(#ecd669, #c9ba6d);
   }
 
-  .flex{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    align-tracks: center;
-  }

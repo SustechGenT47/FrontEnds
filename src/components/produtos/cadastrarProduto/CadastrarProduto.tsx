@@ -139,7 +139,6 @@ function CadastroProduto(){
     function back(){
         navigate('/listarProdutos')
     }
-
     return(
         <Grid container item xs = {12} className = 'topo' justifyContent = 'center'  alignItems="center">
             <Box my= {0}display="flex" justifyContent="center" alignItems="center" >
@@ -167,9 +166,9 @@ function CadastroProduto(){
                 <TextField className="campoProduto" value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'Valor' variant = 'standard' name = 'preco'/>
                 
                 </Box>
-                <Box className="flex">
+                <Box className="flexCategoria" display = 'flex' justifyContent='center' alignItems =  'center'>
                 <FormControl>
-                    <InputLabel id="demo-simple-select-helper-label">Categoria</InputLabel>
+                    <InputLabel style ={{'fontSize': '20px'}} id="demo-simple-select-helper-label">Categoria</InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
