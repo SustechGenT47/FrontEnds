@@ -185,13 +185,14 @@ function CadastroProduto(){
                         }
                     </Select>
                     <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
-                </FormControl>
 
-                </Box>
-                <Box my = {2}display = 'flex' justifyContent="center" alignItems="center">
+                    <Box my = {2}display = 'flex' justifyContent="center" alignItems="center">
                 <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>
                     Cadastrar
                 </Button>
+                    </Box>
+                </FormControl>
+
                 </Box>
             </form>
             </Box>
