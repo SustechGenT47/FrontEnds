@@ -75,19 +75,22 @@ function DeletarProduto() {
         <Card className='deletarCardProduto' variant="outlined">
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
+              <Typography color="textSecondary" className="titleCardDelete" gutterBottom>
                 Deseja deletar a Produto:
               </Typography>
-              <Typography color="textSecondary">
+              <Typography color="textSecondary" className="Delete">
                 {produto?.nome}
               </Typography>
               <Typography color="textSecondary">
+                Descrição: 
                 {produto?.descricao}
               </Typography>
               <Typography color="textSecondary">
+                Quantidade: 
                 {produto?.quantidade}
               </Typography>
               <Typography color="textSecondary">
+                Preço: R$ 
                 {produto?.preco}
               </Typography>
             </Box>
