@@ -17,10 +17,10 @@ function Navbar() {
 
     const user = useSelector<TokenState, TokenState["usuarios"]>(
         (state) => state.usuarios
-      );
+    );
 
-      console.log({"email": user})
-      console.log({"token": token})
+    console.log({ "email": user })
+    console.log({ "token": token })
     let navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -120,23 +120,21 @@ function Navbar() {
                     </Toolbar>
                 </AppBar>
             </Grid>
-    } else if(token !== "" && user !== "admin@email.com"){
+    } else if (token !== "" && user !== "admin@email.com") {
         navBarComponent =
-            <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
-                <AppBar position="static" className='navBar' style={{ "backgroundColor": "#310d57" }} >
+            <Grid direction = 'row' >
+                <AppBar className='navBar' style={{ "backgroundColor": "#310d57" }} >
                     <Toolbar variant="dense" className="flexContainer" >
+                        <Box mx={1} className='cursor containerImagem' display='flex' justifyContent='start'>
+                            <Link to="/home" className="text-decorator-none " >
+                                <Typography>    
+                                    <img className='img2' src={logo_sustech} alt="" />
+                                </Typography>
+                            </Link>
+                        </Box>
 
-                        <Grid className='containerImagem' item xs={4} >
-                            <Box className='cursor'>
-                                <Link to="/home" className="text-decorator-none">
-                                    <Typography>
-                                        <img className='img2' src={logo_sustech} alt="" />
-                                    </Typography>
-                                </Link>
-                            </Box>
-                        </Grid>
-
-                        <Box mx={1} className='cursor' display="flex" justifyContent="start">
+                        <Box className = 'meioNavBar'display = 'flex' alignItems = 'center' justifyContent= 'center'>
+                        <Box  mx = {1} className='cursor' >
                             <Link to="/home" className="text-decorator-none">
                                 <Typography variant="h6" className="tituloNavbar">
                                     Home
@@ -160,26 +158,25 @@ function Navbar() {
                             </Link>
                         </Box>
 
-                        <Box mx={1} className='cursor ' >
+                        <Box mx = {1}className='cursor ' >
                             <Link to="/contato" className="text-decorator-none">
                                 <Typography variant="h6" className="tituloNavbar">
                                     Sobre nós
                                 </Typography>
                             </Link>
                         </Box>
+                        </Box>
 
-                        <Grid item xl={4} >
-                            <Box mx={1} className='cursor logout' onClick={goLogout}>
-                                <Typography variant="h6" className="tituloNavbar" >
+                            <Box mx={1} className='cursor ' onClick={goLogout}>
+                                <Typography variant="h6" className="tituloNavbar logout" >
                                     Logout
                                 </Typography>
                             </Box>
-                        </Grid>
                     </Toolbar>
                 </AppBar>
             </Grid>
 
-    }else {
+    } else {
         navBarComponent =
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <AppBar position="static" className='navBar' style={{ "backgroundColor": "#310d57" }} >

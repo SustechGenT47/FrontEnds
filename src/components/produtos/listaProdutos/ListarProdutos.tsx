@@ -18,6 +18,11 @@ function ListaProdutos(){
     const token = useSelector<TokenState, TokenState["tokens"]>(
       (state) => state.tokens
   );
+
+  const user = useSelector<TokenState, TokenState["usuarios"]>(
+    (state) => state.usuarios
+  );
+
     let navigate =useNavigate();
 
     useEffect(()=>{
@@ -48,9 +53,11 @@ function ListaProdutos(){
         getProduto()
       }, [produto.length])
 
-    return (
-        <>
-         <Box className = 'background'display="flex" justifyContent="center" alignItems="center">
+    var listarProdutosComponent;
+
+    if(token !== "" && user == "admin@email.com"){
+      listarProdutosComponent = 
+      <Box className = 'background'display="flex" justifyContent="center" alignItems="center">
         {
           
           produto.map(produto =>(
@@ -113,10 +120,61 @@ function ListaProdutos(){
           ))
           }
         </Box>
+    }else if(token !== "" && user !== "admin@email.com"){
+      listarProdutosComponent = 
+      <Box className = 'background'display="flex" justifyContent="center" alignItems="center">
+        {
+          
+          produto.map(produto =>(
+          <Box my = {10} mx={3} >
+            <Card variant="outlined" className = 'cardProdutos'>
+              <CardContent >
+
+              <Box display='flex' justifyContent = 'center'    alignItems = 'center' >
+                <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
+              </Box>
+
+              <Box className = 'listaProdutos'>
+                <Typography className = 'nomeProduto' variant="h5" component="h2">
+                 {produto.nome}
+                </Typography>
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
+                 {'Estado: '+produto.estado}
+                </Typography>
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
+                 {'Quantidade: '+produto.quantidade}
+                </Typography>
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
+                 {'Descrição: '+produto.descricao}
+                </Typography>
+                <Typography className = 'linhaProduto' variant="h5" component="h2">
+                 {'R$ '+produto.preco}
+                </Typography>
+              </Box>
+              
+              <Box  className = 'botoes'>
+              <CardActions>
+                <Link to={`/carrinho/${produto.id}`} className="text-decorator-none">
+                    <Box mx={1} >
+                      <Button variant="contained" size='small' className="botaoComprarListar" >
+                        Comprar
+                      </Button>
+                    </Box>
+                  </Link>
+              </CardActions>
+              </Box>
+              </CardContent>
+            </Card>
+          </Box>
+          ))
+          }
+        </Box>
+    }
+    return (
+        <>
+         {listarProdutosComponent}
         </>
-      );
-    
+      )
 }
 
 export default ListaProdutos;
-

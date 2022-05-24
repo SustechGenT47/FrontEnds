@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {Typography, Box, Card, CardContent, CardActions, Button } from '@material-ui/core';
+import {Typography, Box, Card, CardContent, CardActions, Button, Grid } from '@material-ui/core';
 import './TabProduto.css';
 import produtoImagem from '../../../assets/imagemProduto.gif';
 import { Link } from 'react-router-dom';
@@ -11,28 +11,29 @@ import { TokenState } from '../../../Store/tokens/TokensReducer';
 
 
 function TabPostagem() {
-    const [produto, setProduto] =useState<Produto[]>([]);
-    const [value, setValue] = useState('1')
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-      (state) => state.tokens
-  );
-    function handleChange(event: React.ChangeEvent<{}>, newValue: string){
-        setValue(newValue);
-    }
+  const [produto, setProduto] =useState<Produto[]>([]);
+  const [value, setValue] = useState('1')
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+);
+  function handleChange(event: React.ChangeEvent<{}>, newValue: string){
+      setValue(newValue);
+  }
 
-    async function getProduto(){
-      await busca("/produtos/all", setProduto, {
-        headers: {
-          'Authorization': token
-        }
-      })  }
-  
-  
-    useEffect(()=>{
-      getProduto()
-    }, [produto.length])
+  async function getProduto(){
+    await busca("/produtos/all", setProduto, {
+      headers: {
+        'Authorization': token
+      }
+    })  }
+
+
+  useEffect(()=>{
+    getProduto()
+  }, [produto.length])
   return (
     <>
+        <Box>
           <Box display="flex" className='tabProduto' justifyContent="center" alignItems="center">
           {
           
@@ -77,8 +78,16 @@ function TabPostagem() {
           ))
           }
           </Box>
+          <Box display="flex" justifyContent="center">
+          <Box marginRight={1}>
+                        </Box>
+                        <Link to="/listarProdutos" className='text-decorator-none'>
+                        <Button variant="outlined" className='botaoHome'>Ver Produtos</Button>
+                        </Link>
+                    </Box>
+            </Box>
+                          
       
-    
     </>
   );
 }

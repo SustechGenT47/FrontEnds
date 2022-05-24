@@ -11,10 +11,6 @@ function Home(){
     return (
         < div className="home">
 
-    
-
-       
-
             <Grid  container direction="row" justifyContent="center" alignItems="center" >
 
              < CarouselComponent />
@@ -24,6 +20,7 @@ function Home(){
                       <TabProduto />
                     </Box>
                 </Grid>
+
                 <Grid xs={6} > 
              <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
