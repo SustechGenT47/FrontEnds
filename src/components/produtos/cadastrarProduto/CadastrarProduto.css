@@ -17,23 +17,24 @@ height: 100%!important;
   }
 
 .formProduto label{
-    color: white!important;
+    color: rgb(10, 8, 8)!important;
     font-size: 0.5em;
 
 
 }
 
-  .campoProduto{
-      width: 100%;
-      color: #000000!important;
-      font-weight: bold!important;
+.campoProduto{
+width: 100%;
+color: #000000!important;
+font-weight: bold!important;
 
-  }
+}
 
 .campoProduto label{
     font-size: 20px!important;
     margin-top: 5px!important;
 }
+
 .titulo{
     font-weight: bold!important;
     margin-bottom: 5%!important;

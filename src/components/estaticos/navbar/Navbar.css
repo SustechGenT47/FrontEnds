@@ -22,13 +22,16 @@ color: #ff0084!important;
   justify-content: end!important;
   align-items: end!important;
   align-content: end!important;
+<<<<<<< HEAD
+  margin-left: 44em!important;
+=======
   margin-left: 19.1em!important;
+>>>>>>> f57bb38a811aede1f3e278ccc83f0bf1f4d448b6
   }
 
 .img2{
     width: 23vh!important;
     height: 10%!important;
-    margin:0 auto;
 }
 
 .containerImagem{
