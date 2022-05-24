@@ -122,18 +122,19 @@ function Navbar() {
             </Grid>
     } else if (token !== "" && user !== "admin@email.com") {
         navBarComponent =
-            <Grid container  >
+            <Grid direction = 'row' >
                 <AppBar className='navBar' style={{ "backgroundColor": "#310d57" }} >
                     <Toolbar variant="dense" className="flexContainer" >
-                        <Box className='cursor containerImagem' display='flex' justifyContent='flex-start'>
-                            <Link to="/home" className="text-decorator-none" >
-                                <Typography>
+                        <Box mx={1} className='cursor containerImagem' display='flex' justifyContent='start'>
+                            <Link to="/home" className="text-decorator-none " >
+                                <Typography>    
                                     <img className='img2' src={logo_sustech} alt="" />
                                 </Typography>
                             </Link>
                         </Box>
 
-                        <Box mx={1} className='cursor' >
+                        <Box className = 'meioNavBar'display = 'flex' alignItems = 'center' justifyContent= 'center'>
+                        <Box  mx = {1} className='cursor' >
                             <Link to="/home" className="text-decorator-none">
                                 <Typography variant="h6" className="tituloNavbar">
                                     Home
@@ -157,21 +158,20 @@ function Navbar() {
                             </Link>
                         </Box>
 
-                        <Box mx={1} className='cursor ' >
+                        <Box mx = {1}className='cursor ' >
                             <Link to="/contato" className="text-decorator-none">
                                 <Typography variant="h6" className="tituloNavbar">
                                     Sobre nós
                                 </Typography>
                             </Link>
                         </Box>
+                        </Box>
 
-                        <Grid className='logout'>
                             <Box mx={1} className='cursor ' onClick={goLogout}>
-                                <Typography variant="h6" className="tituloNavbar" >
+                                <Typography variant="h6" className="tituloNavbar logout" >
                                     Logout
                                 </Typography>
                             </Box>
-                        </Grid>
                     </Toolbar>
                 </AppBar>
             </Grid>
