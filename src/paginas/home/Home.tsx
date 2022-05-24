@@ -19,13 +19,10 @@ function Home(){
                     <Box  display = 'flex'justifyContent='center' alignItems='center' >
                       <TabProduto />
                     </Box>
-                </Grid>
-
-                <Grid xs={6} > 
-             </Grid>
+                </Grid>  
             </Grid>
 
-            </div>
+        </div>
     );
 }
 
