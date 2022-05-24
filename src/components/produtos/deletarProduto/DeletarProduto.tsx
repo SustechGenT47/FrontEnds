@@ -7,6 +7,7 @@ import Produto from '../../../models/Produto';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../Store/tokens/TokensReducer';
 import { toast } from 'react-toastify';
+import produtoImagem from '../../../assets/imagemProduto.gif';
 
 
 function DeletarProduto() {
@@ -71,26 +72,28 @@ function DeletarProduto() {
           
   return (
     <>
-      <Box m={2}>
-        <Card className='deletarCardProduto' variant="outlined">
+        <Box className = 'background'display="flex" justifyContent="center" alignItems="center">
+
+
+      <Box my = {10} mx={3} >
+        <Card variant="outlined" className = 'cardProdutos'>
           <CardContent>
-            <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
+          <Box display='flex' justifyContent = 'center'    alignItems = 'center' >
+                <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
+              </Box>
+            <Box justifyContent="center" >
+              <Typography className = 'titleCardDelete' variant="h5" gutterBottom>
                 Deseja deletar a Produto:
               </Typography>
-              <Typography color="textSecondary">
+              <Typography className = 'nomeProduto' variant="h5" component="h2">
                 {produto?.nome}
               </Typography>
-              <Typography color="textSecondary">
-                {produto?.nome}
-              </Typography>
-              <Typography color="textSecondary">
-                {produto?.descricao}
-              </Typography>
-              <Typography color="textSecondary">
+              <Typography className = 'linhaProduto' variant="h5" component="h2">
+                Quantidade: 
                 {produto?.quantidade}
               </Typography>
-              <Typography color="textSecondary">
+              <Typography className = 'linhaProduto' variant="h5" component="h2">
+                Preço: R$ 
                 {produto?.preco}
               </Typography>
             </Box>
@@ -111,7 +114,9 @@ function DeletarProduto() {
           </CardActions>
         </Card>
       </Box>
+      </Box>
     </>
+    
   );
 }
 export default DeletarProduto;
