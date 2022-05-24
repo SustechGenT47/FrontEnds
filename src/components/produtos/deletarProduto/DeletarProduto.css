@@ -57,7 +57,11 @@
 }
 
 .titleCardDelete{
-font-size:1.2em !important;
+  font-weight: bold!important;
+  font-size: 1.5em!important;
+  text-align: center;
+  margin-top: 5%!important;
+  margin-bottom: 3%!important;
 
 }
 
