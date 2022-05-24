@@ -1,25 +1,31 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import {Box, Button, Container, TextField, Typography, Grid, FormControl, InputLabel, Select, MenuItem, FormHelperText} from "@material-ui/core"
+import {Box, Button, Container, Grid, TextField, Typography} from "@material-ui/core"
 import './CadastrarProduto.css';
 import { useNavigate, useParams } from "react-router-dom";
 import Produto from '../../../models/Produto';
-import { busca, buscaId, post, put } from "../../../services/Service";
+import { buscaId, post, put } from "../../../services/Service";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../Store/tokens/TokensReducer";
 import { toast } from "react-toastify";
-import { AddBox } from "@mui/icons-material";
-import Categoria from "../../../models/Categoria";
 
 
 function CadastroProduto(){
 
     let navigate = useNavigate();
     const {id} = useParams<{id: string}>();
-    const [categorias, setCategorias] = useState<Categoria[]>([])
-
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
     );
+
+    const [produto, setProduto] = useState<Produto>({
+        id: 0,
+        nome: '',
+        descricao: '',
+        quantidade: 0,
+        preco: 0,
+        estado: '',
+        categoria: null
+    })
 
     useEffect(() => {
         if(token === ''){
@@ -38,57 +44,17 @@ function CadastroProduto(){
     },[token])
 
 
+    async function findById(id:String){
+        buscaId(`/produtos/${id}`, setProduto, {
 
-    const [produto, setProduto] = useState<Produto>({
-        id: 0,
-        nome: '',
-        descricao: '',
-        quantidade: 0,
-        preco: 0,
-        estado: '',
-        categoria: null
-    })
-
-    const [categoria, setCategoria] = useState<Categoria>(
-        {
-            id: 0,
-            tipo: '',
-            palavraChave:"busca"
-        })
-
-        useEffect(() => { 
-            setProduto({
-                ...produto,
-                categoria: categoria
-            })
-        }, [categoria])
-    
-        useEffect(() => {
-            getCategoria()
-            if (id !== undefined) {
-                findByIdProduto(id)
-            }
-        }, [id])
-    
-        async function getCategoria() {
-            await busca("/categorias", setCategorias, {
-                headers: {
-                    'Authorization': token
-                }
-            })
-        }
-
-    async function findByIdProduto(id:String){
-       await buscaId(`/produtos/${id}`, setProduto, {
             headers: {
                 'Authorization': token
             }
         })
     }
-   
     useEffect(() => {
         if(id !== undefined){
-            findByIdProduto(id)
+            findById(id)
         }
     }, [id])
 
@@ -96,7 +62,6 @@ function CadastroProduto(){
         setProduto({
             ...produto,
             [e.target.name]: e.target.value,
-            categoria: categoria
         })
     }
 
@@ -141,64 +106,47 @@ function CadastroProduto(){
     function back(){
         navigate('/listarProdutos')
     }
+
     return(
         <Grid container item xs = {12} className = 'topo background' justifyContent = 'center'  alignItems="center">
-            <Box my= {0}display="flex" justifyContent="center" alignItems="center" >
-            <form onSubmit = {onSubmit}  className='formProduto' >
-                <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center' className='titulo'>Formulario de Produto</Typography>
-                <Box >
-                <TextField className="campoProduto" value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'Nome' variant = 'standard' name = 'nome'/>
-                </Box>
-                <Box >
-                <TextField className="campoProduto" value = {produto.estado} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'estado' label = 'Estado atual do produto' variant = 'standard' name = 'estado'/>
 
-                </Box>
+        <Box my= {0}display="flex" justifyContent="center" alignItems="center" >
+        <form onSubmit = {onSubmit}  className='formProduto' >
+            <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center' className='titulo'>Formulario de Produto</Typography>
+            <Box >
+            <TextField className="campoProduto" value = {produto.nome} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'nome' label = 'Nome' variant = 'standard' name = 'nome'/>
+            </Box>
+            <Box >
+            <TextField className="campoProduto" value = {produto.estado} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'estado' label = 'Estado atual do produto' variant = 'standard' name = 'estado'/>
 
-                <Box>
-                <TextField className="campoProduto" value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'Quantidade' variant = 'standard' name = 'quantidade'/>
 
-                </Box>
+            </Box>
 
-                <Box >
-                <TextField className="campoProduto" value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'Descrição' variant = 'standard' name = 'descricao'/>
+            <Box>
+            <TextField className="campoProduto" value = {produto.quantidade} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'quantidade' label = 'Quantidade' variant = 'standard' name = 'quantidade'/>
 
-                </Box>
+            </Box>
 
-                <Box >
-                <TextField className="campoProduto" value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'Valor' variant = 'standard' name = 'preco'/>
-                
-                </Box>
-                <Box className="flexCategoria" display = 'flex' justifyContent='center' alignItems =  'center'>
-                <FormControl>
-                    <InputLabel style ={{'fontSize': '20px'}} id="categoria">Categoria</InputLabel>
-                    <Select
-                        labelId="categoria"
-                        id="categoria"
-                        onChange={(e) => buscaId(`/categorias/${e.target.value}`, setCategoria, {
-                            headers: {
-                                'Authorization': token
-                            }
-                        })}>
-                        {
-                            categorias.map(categoria => (
-                                <MenuItem  value={categoria.id}>{categoria.tipo}</MenuItem>
-                            ))
-                        }
-                    </Select>
-                    <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
+            <Box >
+            <TextField className="campoProduto" value = {produto.descricao} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'descricao' label = 'Descrição' variant = 'standard' name = 'descricao'/>
 
-                  
-                <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>
+            </Box>
+
+
+            <Box >
+            <TextField className="campoProduto" value = {produto.preco} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id = 'preco' label = 'Valor' variant = 'standard' name = 'preco'/>
+
+            </Box>
+            <Box display="flex" alignItems="center" justifyContent="center" my={2}>
+            <Button type = 'submit' variant = 'contained' className = 'botaoProduto'>
                     Finalizar
-                </Button>
-                
-                </FormControl>
-
-                </Box>
-            </form>
+               </Button>
+               </Box>
+               </form>
             </Box>
         </Grid>
-    )
+ )
 }
+
 
 export default CadastroProduto;
