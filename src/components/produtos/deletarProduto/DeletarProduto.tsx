@@ -78,7 +78,7 @@ function DeletarProduto() {
       <Box my = {10} mx={3} >
         <Card variant="outlined" className = 'cardProdutos'>
           <CardContent>
-            
+
           <Box display='flex' justifyContent = 'center'    alignItems = 'center' >
                 <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
               </Box>
@@ -99,9 +99,8 @@ function DeletarProduto() {
                 {produto?.preco}
               </Typography>
             </Box>
-          </CardContent>
-          <CardActions>
-            <Box className='flexBottonProduto' display="flex" justifyContent="start" ml={1.0} mb={2} >
+            <CardActions>
+            <Box className='flexBottonProduto' display="flex" justifyContent="start" ml={3.0} mb={2} >
               <Box mx={2}>
                 <Button onClick={sim} variant="contained" className="botaoSimProduto" size='large' >
                   Sim
@@ -114,8 +113,12 @@ function DeletarProduto() {
               </Box>
             </Box>
           </CardActions>
+          </CardContent>
         </Card>
+        </Box>
       </Box>
+            <Box>
+
       </Box>
     </>
     
