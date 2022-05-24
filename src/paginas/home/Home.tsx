@@ -19,16 +19,6 @@ function Home(){
                       <TabProduto />
                     </Box>
                 </Grid>
-                <Grid xs={6} > 
-             <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            
-                        </Box>
-                        <Link to="/listarProdutos" className='text-decorator-none'>
-                        <Button variant="outlined" className='botaoHome'>Ver Produtos</Button>
-                        </Link>
-                    </Box>
-             </Grid>
             </Grid>
 
         </>

@@ -26,11 +26,13 @@
   text-shadow: -1px -1px 20px #e7cd44;
   background: linear-gradient(#b84d8b, #dfc64e);
 
+
 }
 
 .botaoNao:hover {
   background: linear-gradient(#ecd669, #c9ba6d);
 }
+
 
 .botaoSimProduto{
   font-size: 0.9em !important;
