@@ -17,10 +17,11 @@
     align-self: flex-start;
     justify-content: flex-start;
     width: 45em!important;
-    height: 35em;
+    height: 44em!important;
     background: linear-gradient(15deg,  #ffffff 20%, #d974d2 78%)!important;
     border-radius:2%;
     padding-left: 2em;
+    margin-top: 4em;
 
 }
 
