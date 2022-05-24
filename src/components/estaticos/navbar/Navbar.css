@@ -22,13 +22,12 @@ color: #ff0084!important;
   justify-content: end!important;
   align-items: end!important;
   align-content: end!important;
-  margin-left: 44em;
+  margin-left: 44em!important;
   }
 
 .img2{
     width: 23vh!important;
     height: 10%!important;
-    margin:0 auto;
 }
 
 .containerImagem{

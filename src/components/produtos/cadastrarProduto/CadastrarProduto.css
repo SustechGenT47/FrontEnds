@@ -23,17 +23,18 @@ height: 100%!important;
 
 }
 
-  .campoProduto{
-      width: 100%;
-      color: #000000!important;
-      font-weight: bold!important;
+.campoProduto{
+width: 100%;
+color: #000000!important;
+font-weight: bold!important;
 
-  }
+}
 
 .campoProduto label{
     font-size: 20px!important;
     margin-top: 5px!important;
 }
+
 .titulo{
     font-weight: bold!important;
     margin-bottom: 5%!important;
