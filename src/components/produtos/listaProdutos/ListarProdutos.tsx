@@ -50,6 +50,7 @@ function ListaProdutos(){
 
     return (
         <>
+        
          <Box className = 'background'display="flex" justifyContent="center" alignItems="center">
         {
           

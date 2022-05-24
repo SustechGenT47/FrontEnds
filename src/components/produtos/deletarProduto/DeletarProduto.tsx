@@ -82,6 +82,9 @@ function DeletarProduto() {
                 {produto?.nome}
               </Typography>
               <Typography color="textSecondary">
+                {produto?.nome}
+              </Typography>
+              <Typography color="textSecondary">
                 {produto?.descricao}
               </Typography>
               <Typography color="textSecondary">
