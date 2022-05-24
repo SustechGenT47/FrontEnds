@@ -3,7 +3,7 @@ img {
     width: 100em;
     height: 30em;
     object-fit: cover;
-    margin-top: 7vh;
+    margin-top: 2.5em!important;
     border-radius: 4%!important;
     margin-left: 0em!important;
 }

@@ -9,7 +9,7 @@
 .cardTabProduto{
    background:#f0aef4!important;
     width: 45vh;
-    height: 8em;
+    height: 9em!important;
     align-items: center;
     text-align: center;
     margin-left: 3vh;
@@ -25,7 +25,7 @@
   background: linear-gradient(36deg,  #ffffff 1%, #ab61af 78%)!important;
   border:solid 4px!important;
   width: 45vh;
-  height: 13em!important;
+  height: 14em!important;
   align-items: center;
   text-align: center;
   margin-left: 3vh;

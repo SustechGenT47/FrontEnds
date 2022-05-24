@@ -49,7 +49,7 @@ function Navbar() {
     if (token !== "" && user == "admin@email.com") {
         navBarComponent =
             <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
-                <AppBar position="static" className='navBar' style={{ "backgroundColor": "#310d57" }} >
+                <AppBar  position="static" className='navBar' style={{ "backgroundColor": "#310d57" }} >
                     <Toolbar variant="dense" className="flexContainer" >
 
                         <Grid className='containerImagem' item xs={4} >
@@ -133,7 +133,7 @@ function Navbar() {
                             </Link>
                         </Box>
 
-                        <Box className = 'meioNavBar'display = 'flex' alignItems = 'center' justifyContent= 'center'>
+                        <Box className = 'meioNavBarUser'display = 'flex' alignItems = 'center' justifyContent= 'center'>
                         <Box  mx = {1} className='cursor' >
                             <Link to="/home" className="text-decorator-none">
                                 <Typography variant="h6" className="tituloNavbar">
@@ -168,7 +168,7 @@ function Navbar() {
                         </Box>
 
                             <Box mx={1} className='cursor ' onClick={goLogout}>
-                                <Typography variant="h6" className="tituloNavbar logout" >
+                                <Typography variant="h6" className="tituloNavbar logoutUser" >
                                     Logout
                                 </Typography>
                             </Box>
