@@ -78,6 +78,7 @@ function DeletarProduto() {
       <Box my = {10} mx={3} >
         <Card variant="outlined" className = 'cardProdutos'>
           <CardContent>
+            
           <Box display='flex' justifyContent = 'center'    alignItems = 'center' >
                 <img className = 'imagemListarProduto'src={produtoImagem} alt="" />
               </Box>
@@ -93,6 +94,7 @@ function DeletarProduto() {
                 {produto?.quantidade}
               </Typography>
               <Typography className = 'linhaProduto' variant="h5" component="h2">
+
                 Preço: R$ 
                 {produto?.preco}
               </Typography>

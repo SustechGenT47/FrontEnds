@@ -142,7 +142,7 @@ function CadastroProduto(){
         navigate('/listarProdutos')
     }
     return(
-        <Grid container item xs = {12} className = 'topo' justifyContent = 'center'  alignItems="center">
+        <Grid container item xs = {12} className = 'topo background' justifyContent = 'center'  alignItems="center">
             <Box my= {0}display="flex" justifyContent="center" alignItems="center" >
             <form onSubmit = {onSubmit}  className='formProduto' >
                 <Typography variant = 'h3' color = 'textSecondary' component = "h1" align = 'center' className='titulo'>Formulario de Produto</Typography>
