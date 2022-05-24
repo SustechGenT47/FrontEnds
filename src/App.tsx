@@ -38,8 +38,6 @@ function App() {
         <Route path="/formularioCategoria" element={<CadastroCategoria />} />
         <Route path="/formularioCategoria/:id" element={<CadastroCategoria />} />
         <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
-        
-
         <Route path="/formularioProduto" element={<CadastroProduto />} />
         <Route path="/formularioProduto/:id" element={<AtualizarProduto />} />
         <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
