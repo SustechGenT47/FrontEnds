@@ -53,7 +53,7 @@ function CadastroProduto(){
         {
             id: 0,
             tipo: '',
-            palavraChave:""
+            palavraChave:"busca"
         })
 
         useEffect(() => { 
@@ -181,7 +181,7 @@ function CadastroProduto(){
                         })}>
                         {
                             categorias.map(categoria => (
-                                <MenuItem  id = 'categoria' value={categoria.id}>{categoria.tipo}</MenuItem>
+                                <MenuItem  value={categoria.id}>{categoria.tipo}</MenuItem>
                             ))
                         }
                     </Select>
