@@ -18,7 +18,6 @@ import ListarProdutos from './components/produtos/listaProdutos/ListarProdutos';
 import CadastroProduto from './components/produtos/cadastrarProduto/CadastrarProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
 import Carrinho from './components/carrinho/Carrinho';
-import AtualizarProduto from './components/produtos/atualizarProduto/AtualizarProduto';
 
 function App() {
   return (

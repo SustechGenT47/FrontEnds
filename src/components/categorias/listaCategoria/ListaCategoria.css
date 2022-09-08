@@ -12,12 +12,12 @@
 
 .tituloCategoria{
   font-size: 3vh!important;
-  padding-bottom: 10px;
+  padding-bottom: 0.1em;
   align-items: center;
 }
 
 .conteudoCategoria{
-  padding-top: 20%;
+  padding-top: 10%;
   align-items: center;
   justify-content: center;
   vertical-align: bottom;
@@ -39,6 +39,7 @@
     color:#671a62!important;
     border-color:#e7cd44;
     font-weight:bold!important;
+    padding-left: 1em;
     border-top-left-radius:19px!important;
     border-top-right-radius:19px!important;
     border-bottom-left-radius:19px!important;
@@ -52,7 +53,7 @@
     background: linear-gradient(#ecd669, #c9ba6d);
   }
 
-  .botaoDeletar{
+  .botaoDel{
     font-size:0.9em!important;
     font-family:Arial!important;
     width:6.5em;
@@ -66,13 +67,10 @@
     border-bottom-right-radius:19px!important;
     text-shadow: -1px -1px 20px #ed0404;
     background:linear-gradient(#e00909, #eda7a7);
-    margin-top: 2vh!important;
-    margin-right: 1vw!important;
-    padding-right: 4w!important;
-
+    margin: 55em;
   }
   
-  .botaoDeletar:hover {
+  .botaoDel:hover {
     background: linear-gradient(#ecd669, #c9ba6d);
   }
 

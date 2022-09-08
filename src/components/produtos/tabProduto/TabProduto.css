@@ -1,14 +1,13 @@
 .tabProduto{
     align-items: center;
     font-size: 5vh;
-    width: 90%;
     height: 90vh!important;
 }
 
 .cardTabProduto{
    background:#f0aef4!important;
     width: 45vh;
-    height: 9em!important;
+    height: 50vh!important;
     align-items: center;
     text-align: center;
     margin-left: 3vh;
@@ -24,7 +23,7 @@
   background: linear-gradient(36deg,  #ffffff 1%, #ab61af 78%)!important;
   border:solid 4px!important;
   width: 45vh;
-  height: 14em!important;
+  height: 75vh!important;
   align-items: center;
   text-align: center;
   margin-left: 3vh;
@@ -51,6 +50,7 @@
   .botaoComprar{
     font-size:14px!important;
     font-family:Arial!important;
+    margin-top: 1px!important;
     width:7vw;
     height:5vh;
     color:#671a62!important;
@@ -66,4 +66,8 @@
   
   .botaoComprar:hover {
     background: linear-gradient(#ecd669, #c9ba6d);
+  }
+
+  .linhaProdutopreco {
+    padding-bottom: 0.1em;
   }
