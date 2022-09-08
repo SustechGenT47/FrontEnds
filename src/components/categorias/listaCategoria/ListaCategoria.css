@@ -74,3 +74,11 @@
     background: linear-gradient(#ecd669, #c9ba6d);
   }
 
+  .botoesCategoria{
+    display: flex!important;
+    text-align: center!important;
+    justify-content: center!important;
+    align-items: center!important;
+    margin-top: 20%;
+  }
+

@@ -69,11 +69,11 @@ function ListaCategoria() {
 
                 </Box>
               </CardContent>
-              <Box display="flex" justifyContent="center" style={{'marginTop':'20%'}} >
+              <Box className="botoesCategoria">
               <CardActions>
               
                   <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
-                    <Box mx={5} justifyContent="center" style={{'marginTop':'0'}}>
+                    <Box mx={2} justifyContent="center" style={{'marginTop':'0'}}>
                       <Button variant="contained" className="botaoAtt"  >
                         atualizar
                       </Button>
