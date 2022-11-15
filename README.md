@@ -1,50 +1,89 @@
+# Site Criado para a realização do Projeto integrador Utilizando o MicroFramework React feito através do Bootcamp da Generation Brasil 📖🟢
 
-# FrontEnds
 
-# Getting Started with Create React App
+  ## ✔️ Técnicas e tecnologias utilizadas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ``React``
+- ``Typescript``
+- ``Html``
+- ``CSS``
+- ``Netlify``
+- ``Heroku``
+- ``Swagger``
 
-## Available Scripts
 
-In the project directory, you can run:
+ #### ✅ - Consumo da api Sustech
+ * Link da api no heroku https://sus-tech.herokuapp.com/swagger-ui/index.html#/
+ * Foi criada uma camada de service onde realizamos a Integração com a api
+ 1. Cadastro usuario utilizando a requisição Post
+ 2. Login usuario utilizando a requisição Post
+ 3. Busca utilizando o metodo get de forma generica em todo o site
+ 
+ 
+ 
+ #### ✔️ - Criação dos Components
+ * Component de navbar para a criação do cabeçalho da pagina e navbar
+ * Component de footer para criar o rodapé da pagina e as informações do site
+ * Component de Formulario de Categoria, onde ira verificar se a categoria ja existe para realizar um metodo Put para Atulizar a categoria ou se ele não existe para criar um metodo Post e gerar uma nova categoria
+ * Component de deletar Categoria utilizando o metodo Delete
+ * Component de listar todas as  categorias utilizando o metodo Get
+ * Component de Formulario de  Produto onde ira verificar se o Produto ja existe para criar um metodo Put para atulizar o Produto ou um metodo Post para criar um novo Produto
+ * Component Modal Produto que é utilizado para criar um modelo base da pagina de postagens que é utilizado na pagina Produtos e tambem na pagina home
+  
+   
+ #### ✅ - Utilização do site
+ * O usuario logo ao abrir a pagina ja ira ver a pagina de login caso tenha uma conta ele ja ira poder entra no site caso não ele podera se cadastrar
+ * O usuario faz o cadastro colocando suas informações utilizando um metodo  post e logo ja é gerado uma criptografia dos seus dados para serem armazenados no banco de dados
+ * Logo que o usuario faz o login na pagina ele recebera um token unico que permitira que ele utilize o site e possa criar temas e novas postagens
+ * Esse token tem uma validade de 30 minutos
+ * Logo que esse token expire o usuario sera redirecionado para a pagina de login para que possa se autenticar novamente
+ 
+  #### ✅ - Utilização do site - 2 
+ * Existem dois tipos de usuarios, os compradores/vendedores e os administradores
+ * Os usuarios normais podem fazer o cadastro de um novo produto para venda, e tambem comprar , mas nao tem acesso na seção de categorias 
+ 
+ 
+  
+ #### 🔨 - A realização dos testes foram feitas todas no insominia
+ * Testes dos endpoints Get de Categoria/Produto/Usuario
+ * Testes dos endpoints GetbyId de Categoria/Produto/Usuario
+ * Testes dos endpoints Post de Categoria/Produto/Usuario 
+ * Testes dos endpoints Put de Categoria/Produto/Usuario 
+ * Testes dos endpoints Delete de Categoria/Produto/Usuario
+ 
+  #### 🔨 - Integração do swagger para deploy na plataforma heroku
+ * Foi Criada uma camada na aplicação fazendo a configuração do swagger com os endpoints
+ * Foi feito o deploy da api Utilziando a plataforma do heroku, onde disponibilizamos em nuvem para fazer o consumo posteriormente na etapa de front-end
+ 
+  ##### 🔨 - Link da aplicação no heroku e instruções para entrar
+  1. - Entre no link https://sus-tech.herokuapp.com/swagger-ui/index.html#/
+  2. - Vai abrir uma aba pedindo login e senha
+  3. - Coloque o login como root e senha como root
+  
+  
+  #### 🔨 - Demonstrativo dos endpoits de usuario na plataforma do swagger
+  ![image](https://user-images.githubusercontent.com/100168699/202008453-9f07e5f8-8398-4254-966d-1ce7a27ad749.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  ##### 🔨 - Demonstrativo dos endpoits de Tema na plataforma do swagger
+ ![image](https://user-images.githubusercontent.com/100168699/202008499-e4f024d8-34b4-4188-9548-e43f33b60a1c.png)
+  
+  ##### 🔨 - Demonstrativo dos endpoits de Postagens na plataforma do swagger
+  
+![image](https://user-images.githubusercontent.com/100168699/202008565-742fc26e-a2b0-4a4c-8eed-4bc537256166.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  ##### 🔨 - Link do site ja funcionando e feito o deploy pela plataforma do netlify
+  https://luxury-parfait-6f6d5e.netlify.app/
+ 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
->>>>>>> 115aaa9b660d8f589f110c6dfa6c942cac3d719d
+ # 🎨 Desenvolvido por:
+* 👨 ``Matheus Rodrigues``
+* 👩 ``Danyele Amarante``
+* 👨 ``Gustavo Santos``
+* 👩 ``Yasmin Diba``
+* 👨 ``Cleverson Mendes``
+* 👩 ``Twani Teixeira``
+* 👨 ``Lucas Pereira``
+ 
+ 
+🎁 Obrigada @Generation pelos aprendizados nessa trilha 
